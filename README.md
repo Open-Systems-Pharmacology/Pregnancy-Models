@@ -3,7 +3,9 @@
 Within this repository, we distribute the physiologically-based whole-body models for Pregnant Women published in [[1,2,3](#references)].
 
 The models comprise 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
+<p align="center">
 <img src="ModelStructure.png" width="60%">
+</p>
 
 ## Repository files
 * The models are provided as ready-to-use MoBi projects (subfolder _Models_)

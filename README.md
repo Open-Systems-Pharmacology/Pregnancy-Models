@@ -3,22 +3,22 @@
 Within this repository, we distribute the physiologically-based whole-body models for Pregnant Women published in [[1,2,3](#references)].
 
 The models comprise 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
+<p align="center">
 <img src="ModelStructure.png" width="60%">
+</p>
 
 ## Repository files
 * The models are provided as ready-to-use MoBi projects (subfolder _Models_)
   * _Cefazolin_, _Cefuroxime_ and _Cefradine_ model evaluation is described in [[3](#references)]
   * _Caffeine_, _Midazolam_, _Nifedipine_, _Metoprolol_, _Ondansetron_, _Granisetron_, _Diazepam_ and _Metronidazole_ model evaluation is described in [[1](#references)]
-  
-* _BuildingBlocks_ subfolder contains MoBi building block for spatial structure and passive transports. Those building blocks can be used in MoBi to build new substance models for pregnant women as described in the next section.
+
+* _BuildingBlocks_ subfolder contains MoBi building block for spatial structure and passive transports. Those building blocks can be used in MoBi to build new substance models.
 
 ## HowTo
-Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim (due to the fact that e.g. for the protein model not all required data was collected). In order to perform simulations in pregnant woman using newly build substance models and apply them along with pregnancy populations, the user should follow the workflow described below. 
-
-A more comprehensive tutorial will be published later on.
+Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim (due to the fact that e.g. for the protein model not all required data was collected). 
 
 ### How to combine an existing (MoBi) pregnancy model with a pregnancy population created in PK-Sim
-Steps 3ff are performed in PK-Sim.
+Steps 3 to 5 are performed in PK-Sim.
 1. If a (MoBi) pregnancy model is available in **pkml** format, go to the step 3
 2. If a (MoBi) pregnancy model is available in **mbp3** format (MoBi project): open it in MoBi, select simulation of interest and save it in pkml format
 3. Create an Individual using population **Pregnant (Dallmann et al. 2017)**
@@ -26,7 +26,8 @@ Steps 3ff are performed in PK-Sim.
 5. Import (MoBi) pregnancy model in **pkml** format and combine it with created population building block as described in the [OSP Suite manual](https://github.com/Open-Systems-Pharmacology/OSPSuite.Documentation/blob/master/Open%20Systems%20Pharmacology%20Suite.pdf) (**Ch. 21.2 Importing Individual and Population Simulation**)
 
 ### How to create a new pregnancy model
-The procedure will be described in the tutorial mentioned above.
+The procedure will be desribed in a comprehensive tutorial that will be published soon.
+
 
 ## Version information
 The physiology is based on the PBPK model implemented in PK-Sim version 6.3. The MoBi project files were created in version 6.3.
@@ -35,7 +36,7 @@ The physiology is based on the PBPK model implemented in PK-Sim version 6.3. The
 Everyone interacting in the Open Systems Pharmacology community (codebases, issue trackers, chat rooms, mailing lists etc...) is expected to follow the Open Systems Pharmacology [code of conduct](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CODE_OF_CONDUCT.md).
 
 ## Contribution
-We encourage contribution to the Open Systems Pharmacology community. Before getting started, please read the [contribution guidelines](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CONTRIBUTING.md). If you are contributing code, please be familiar with the [coding standard](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CODING_STANDARDS.md).
+We encourage contribution to the Open Systems Pharmacology community. Before getting started, please read the [contribution guidelines](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CONTRIBUTING.md). If you are contributing code, please be familiar with the [coding standards](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CODING_STANDARDS.md).
 
 ## License
 The models are distributed under the [GPLv2 License](https://github.com/Open-Systems-Pharmacology/Suite/blob/develop/LICENSE).

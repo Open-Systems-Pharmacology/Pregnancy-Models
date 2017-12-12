@@ -22,6 +22,9 @@ Steps 3 to 5 are performed in PK-Sim.
 1. If a (MoBi) pregnancy model is available in **pkml** format, go to the step 3
 2. If a (MoBi) pregnancy model is available in **mbp3** format (MoBi project): open it in MoBi, select simulation of interest and save it in pkml format
 3. Create an Individual using population **Pregnant (Dallmann et al. 2017)**
+
+   _Of note, in PK-Sim®, the fertilization age (FA) is defined via the individual’s age, with 30 years corresponding to a FA of 0 weeks (i.e. just prior to conception). Hence, a pregnant woman with a FA of 38 weeks is defined using an age of 30.75 years._
+
 4. Create a pregnancy population with the required settings based on the individual above
 5. Import (MoBi) pregnancy model in **pkml** format and combine it with created population building block as described in the [OSP Suite manual](https://github.com/Open-Systems-Pharmacology/OSPSuite.Documentation/blob/master/Open%20Systems%20Pharmacology%20Suite.pdf) (**Ch. 21.2 Importing Individual and Population Simulation**)
 

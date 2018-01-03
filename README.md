@@ -8,7 +8,7 @@ The models comprise 27 compartments, including nine pregnancy-specific compartme
 </p>
 
 ## Repository files
-* The models are provided as ready-to-use MoBi projects (subfolder _Models_)
+* The models are provided as ready-to-use MoBi and PK-Sim projects (subfolder _Models_)
   * _Cefazolin_, _Cefuroxime_ and _Cefradine_ model evaluation is described in [[3](#references)]
   * _Caffeine_, _Midazolam_, _Nifedipine_, _Metoprolol_, _Ondansetron_, _Granisetron_, _Diazepam_ and _Metronidazole_ model evaluation is described in [[1](#references)]
 

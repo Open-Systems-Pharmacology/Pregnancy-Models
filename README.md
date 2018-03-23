@@ -29,7 +29,7 @@ Steps 3 to 5 are performed in PK-Sim.
 5. Import (MoBi) pregnancy model in **pkml** format and combine it with created population building block as described in the [OSP Suite manual](https://github.com/Open-Systems-Pharmacology/OSPSuite.Documentation/blob/master/Open%20Systems%20Pharmacology%20Suite.pdf) (**Ch. 21.2 Importing Individual and Population Simulation**)
 
 ### How to create a new pregnancy model
-The procedure will be desribed in a comprehensive tutorial that will be published soon.
+The procedure is desribed in a comprehensive [tutorial](https://doi.org/10.1002/psp4.12300).
 
 
 ## Version information

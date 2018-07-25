@@ -33,7 +33,7 @@ The procedure is desribed in a comprehensive [tutorial](https://doi.org/10.1002/
 
 
 ## Version information
-The physiology is based on the PBPK model implemented in PK-Sim version 6.3. The MoBi project files were created in version 6.3.
+The physiology is based on the PBPK model implemented in PK-Sim version 6.0. The MoBi project files were created in version 6.0.
 
 ## Code of conduct
 Everyone interacting in the Open Systems Pharmacology community (codebases, issue trackers, chat rooms, mailing lists etc...) is expected to follow the Open Systems Pharmacology [code of conduct](https://gitprint.com/Open-Systems-Pharmacology/Suite/blob/master/CODE_OF_CONDUCT.md).

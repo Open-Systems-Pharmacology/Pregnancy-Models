@@ -1,6 +1,6 @@
 # Physiologically Based Pharmacokinetic Models for Pregnant Women
 
-Within this repository, we distribute the physiologically-based whole-body models for Pregnant Women published in [[1,2,3,4](#references)].
+Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4](#references)].
 
 The models comprise 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">

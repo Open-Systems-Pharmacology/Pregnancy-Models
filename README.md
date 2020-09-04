@@ -18,7 +18,7 @@ The models comprise 27 compartments, including nine pregnancy-specific compartme
 ## HowTo
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model not all required data was collected). 
 
-### How to combine an existing (MoBi) pregnancy model with a pregnancy population created in PK-Sim
+### How to combine an existing (MoBi<sup>®</sup>) pregnancy model with a pregnancy population created in PK-Sim<sup>®</sup>
 Steps 3 to 5 are performed in PK-Sim.
 1. If a (MoBi<sup>®</sup>) pregnancy model is available in **pkml** format, go to the step 3
 2. If a (MoBi<sup>®</sup>) pregnancy model is available in **mbp3** format (MoBi<sup>®</sup> project): open it in MoBi<sup>®</sup>, select simulation of interest and save it in pkml format

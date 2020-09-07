@@ -1,6 +1,6 @@
 # Physiologically Based Pharmacokinetic Models for Pregnant Women
 
-Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4](#references)].
+Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4,5](#references)].
 
 The models comprise 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">
@@ -12,6 +12,7 @@ The models comprise 27 compartments, including nine pregnancy-specific compartme
   * _Cefazolin_, _Cefuroxime_ and _Cefradine_ model evaluation is described in [[2](#references)]
   * _Caffeine_, _Midazolam_, _Nifedipine_, _Metoprolol_, _Ondansetron_, _Granisetron_, _Diazepam_ and _Metronidazole_ model evaluation is described in [[3](#references)]
   * _Acyclovir_ model evaluation is described in [[4](#references)]
+  * _Dolutegravir_ model evaluation is described in [[5](#references)]
   
 * _BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial structure and passive transports. Those building blocks can be used in MoBi<sup>®</sup> to build new substance models.
 
@@ -53,4 +54,6 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 [3] [Dallmann A, Ince I, Coboeken K, Eissing T, Hempel G. A Physiologically Based Pharmacokinetic Model for Pregnant Women to Predict the Pharmacokinetics of Drugs Metabolized Via Several Enzymatic Pathways. *Clin Pharmacokinet.* 57(6), 2018. doi: 10.1007/s40262-017-0594-5](https://www.ncbi.nlm.nih.gov/pubmed/28924743/)
 
 [4] [Xiaomei LI, Momper JD, Rakhmanina N, van den Anker JN, Green DJ, Burckart GJ, Best BM, Mirochnick M, Capparelli EV, Dallmann A. Physiologically based pharmacokinetic models to predict maternal pharmacokinetics and fetal exposure to emtricitabine and acyclovir. *J Clin Pharmacol.* 60(2), 2020: 240-255. doi: 10.1002/jcph.1515](https://pubmed.ncbi.nlm.nih.gov/31489678/)
+
+[5] [Xiaomei LI, Momper JD, Rakhmanina NY, Green DJ, Burckart GJ, Cressey TR, Mirochnick M, Best BM, van den Anker JN, Dallmann A. Physiologically based pharmacokinetic models to predict maternal pharmacokinetics and fetal exposure to emtricitabine and acyclovir. *J Clin Pharmacol.* 2020 [ePub ahead of print]. doi: 10.1007/s40262-020-00897-9](https://pubmed.ncbi.nlm.nih.gov/32451908/)
 

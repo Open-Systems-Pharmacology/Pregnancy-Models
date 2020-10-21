@@ -13,7 +13,7 @@ The pregnancy model structure comprises per default 27 compartments, including n
 * The models are provided as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_)
   * _Cefazolin_, _Cefuroxime_ and _Cefradine_ model evaluation is described in [[2](#references)]
   * _Caffeine_, _Midazolam_, _Nifedipine_, _Metoprolol_, _Ondansetron_, _Granisetron_, _Diazepam_ and _Metronidazole_ model evaluation is described in [[3](#references)]
-  * _Acyclovir_ model evaluation is described in [[4](#references)]
+  * _Acyclovir_ and _Emtricitabine_ model evaluation is described in [[4](#references)]
   * _Dolutegravir_ model evaluation is described in [[5](#references)]
   
 * _BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial structure and passive transports. Those building blocks can be used in MoBi<sup>®</sup> to build new substance models.

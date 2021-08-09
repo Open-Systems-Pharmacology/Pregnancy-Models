@@ -1,8 +1,8 @@
 # Physiologically Based Pharmacokinetic Models for Pregnant Women
 
-Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4,5](#references)].
+Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4,5,6,7](#references)].
 
-The pregnancy (and postpartum) PBPK model for amoxicillin published in [[6](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
+The pregnancy (and postpartum) PBPK model for amoxicillin published in [[8](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
 
 The pregnancy model structure comprises per default 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">
@@ -15,6 +15,8 @@ The pregnancy model structure comprises per default 27 compartments, including n
   * _Caffeine_, _Midazolam_, _Nifedipine_, _Metoprolol_, _Ondansetron_, _Granisetron_, _Diazepam_ and _Metronidazole_ model evaluation is described in [[3](#references)]
   * _Acyclovir_ and _Emtricitabine_ model evaluation is described in [[4](#references)]
   * _Dolutegravir_ model evaluation is described in [[5](#references)]
+  * _Acetaminophen_ model evaluation is described in [[6,7](#references)]
+
   
 * _BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial structure and passive transports. Those building blocks can be used in MoBi<sup>®</sup> to build new substance models.
 
@@ -57,6 +59,10 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 
 [4] [Xiaomei LI, Momper JD, Rakhmanina N, van den Anker JN, Green DJ, Burckart GJ, Best BM, Mirochnick M, Capparelli EV, Dallmann A. Physiologically based pharmacokinetic models to predict maternal pharmacokinetics and fetal exposure to emtricitabine and acyclovir. *J Clin Pharmacol.* 60(2), 2020: 240-255. doi: 10.1002/jcph.1515](https://pubmed.ncbi.nlm.nih.gov/31489678/)
 
-[5] [Xiaomei LI, Momper JD, Rakhmanina NY, Green DJ, Burckart GJ, Cressey TR, Mirochnick M, Best BM, van den Anker JN, Dallmann A. Prediction of Maternal and Fetal Pharmacokinetics of Dolutegravir and Raltegravir Using Physiologically Based Pharmacokinetic Modeling. *Clin Pharmacokinet.* 2020 [ePub ahead of print]. doi: 10.1007/s40262-020-00897-9](https://pubmed.ncbi.nlm.nih.gov/32451908/)
+[5] [Xiaomei LI, Momper JD, Rakhmanina NY, Green DJ, Burckart GJ, Cressey TR, Mirochnick M, Best BM, van den Anker JN, Dallmann A. Prediction of Maternal and Fetal Pharmacokinetics of Dolutegravir and Raltegravir Using Physiologically Based Pharmacokinetic Modeling. *Clin Pharmacokinet.* 59(11), 2020: 1433-1450. doi: 10.1007/s40262-020-00897-9](https://pubmed.ncbi.nlm.nih.gov/32451908/)
 
-[6] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)
+[6] [Mian P, van den Anker JN, van Calsteren K, Annaert P, Tibboel D, Pfister M, Allegaert K, Dallmann A. Physiologically Based Pharmacokinetic Modeling to Characterize Acetaminophen Pharmacokinetics and N-Acetyl-p-Benzoquinone Imine (NAPQI) Formation in Non-Pregnant and Pregnant Women. *Clin Pharmacokinet.* 59(1), 2020: 97-110. doi: 10.1007/s40262-019-00799-5](https://pubmed.ncbi.nlm.nih.gov/31347013/)
+
+[7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
+
+[8] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)

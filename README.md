@@ -1,26 +1,32 @@
 # Physiologically Based Pharmacokinetic Models for Pregnant Women
 
-Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4,5,6,7](#references)].
+Within this repository, we distribute the physiologically-based whole-body models for pregnant women published in [[1,2,3,4,5,6,7](#references)] as well as the *in silico* cotyledon perfusion model presented in [[8](#references)].
 
-The pregnancy (and postpartum) PBPK model for amoxicillin published in [[8](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
+The pregnancy (and postpartum) PBPK model for amoxicillin published in [[9](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
 
 The pregnancy model structure comprises per default 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">
-<img src="ModelStructure.png" width="60%">
+<img src="ModelStructure.png" width="50%">
 </p>
 
+
 ## Repository files
-* The models are provided as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_)
+### Whole-body PBPK models
+
+The models are provided as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_). Evaluation of these model is described in the following publications:
   * _Cefazolin_, _cefuroxime_ and _cefradine_ model evaluation is described in [[2](#references)]
   * _Caffeine_, _midazolam_, _nifedipine_, _metoprolol_, _ondansetron_, _granisetron_, _diazepam_ and _metronidazole_ model evaluation is described in [[3](#references)]
   * _Acyclovir_ and _emtricitabine_ model evaluation is described in [[4](#references)]
   * _Dolutegravir_ and _raltegravir_ model evaluation is described in [[5](#references)]
-  * _Acetaminophen_ model evaluation is described in [[6,7](#references)]
+  * _Acetaminophen_ model evaluation is described in [[6,7,8](#references)]
 
-  
-* _BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial structure and passive transports. Those building blocks can be used in MoBi<sup>®</sup> to build new substance models.
+_BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial structure and passive transports. Those building blocks can be used in MoBi<sup>®</sup> to build new substance models.
 
-## HowTo
+### in silico cotyledon perfusion model
+
+The *in silico* cotyledon perfusion model presented in [[8](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). 
+
+## How to run pregnancy PBPK simulations
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model not all required data was collected). 
 
 ### How to combine an existing (MoBi<sup>®</sup>) pregnancy model with a pregnancy population created in PK-Sim<sup>®</sup>
@@ -65,4 +71,6 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 
 [7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
 
-[8] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)
+[8] [Mian P, Nolan B, Den Anker V, Nicolaas J, Van Calsteren K, Allegaert K, Lakhi N, Dallmann A. Mechanistic coupling of a refined ex vivo cotyledon perfusion model and a physiologically based pharmacokinetic model to predict fetal acetaminophen pharmacokinetics at delivery. *Front Pediatr.* 2021: 979. [*Online ahead of print*]](https://www.frontiersin.org/articles/10.3389/fped.2021.733520)
+
+[9] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)

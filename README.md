@@ -6,8 +6,9 @@ The pregnancy (and postpartum) PBPK model for amoxicillin published in [[9](#ref
 
 The pregnancy model structure comprises per default 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">
-<img src="ModelStructure.png" width="60%">
+<img src="ModelStructure.png" width="50%">
 </p>
+
 
 ## Repository files
 ### Whole-body PBPK models
@@ -23,7 +24,7 @@ _BuildingBlocks_ subfolder contains MoBi<sup>®</sup> building block for spatial
 
 ### in silico cotyledon perfusion model
 
-The *in silico* cotyledon perfusion model presented in [[7](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). 
+The *in silico* cotyledon perfusion model presented in [[8](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). 
 
 ## How to run pregnancy PBPK simulations
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model not all required data was collected). 

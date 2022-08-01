@@ -36,7 +36,7 @@ When setting up a pregnancy PBPK model using this building block, the fetal frac
 
 ### in silico cotyledon perfusion model
 
-The *in silico* cotyledon perfusion model presented in [[9](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). 
+The *in silico* cotyledon perfusion model presented in [[9](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). Note that this model was built with MoBi<sup>®</sup> version 9.1 and is not updated with new releases of MoBi<sup>®</sup>.
 
 ## How to run pregnancy PBPK simulations
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model structure not all required data was collected). 

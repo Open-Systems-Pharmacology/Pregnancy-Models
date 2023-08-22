@@ -1,4 +1,4 @@
-# Physiologically Based Pharmacokinetic Models for Pregnant Women
+# Physiologically Based Pharmacokinetic Models for Pregnancy
 
 Within this repository, we distribute the physiologically-based whole-body models for pregnant individuals published in [[1,2,3,4,5,6,7](#references)]. Additionally, this repository contains the refined passive transports building block which was used to build pregnancy PBPK models with different unbound drug fractions in maternal and fetal organism as described in [[8](#references)] as well as the *in silico* cotyledon perfusion model presented in [[9](#references)].
 

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PassiveTransportBuildingBlock id="pNFYhYGSu0CzkTe_WsmFNg" name="PregnantWoman" icon="PassiveTransport" bbVersion="445" version="14">
-  <Creation createdAt="5249067872650297557" createdBy="GDUTJ" creationMode="New" origin="Other" />
+<PassiveTransportBuildingBlock id="RoRy3IXzy02VYYNsACjsFg" name="PregnantWoman" icon="PassiveTransport" bbVersion="483" version="16">
+  <Creation createdAt="5250283667649729884" createdBy="GDUTJ" creationMode="New" origin="Other" />
   <Builders>
-    <TransportBuilder id="2zMPy_rMykqeKVU3X7HFhQ" name="DrugAbsorption_para" description="Drug absorption paracellular" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="1" processRateParameterPersistable="0" formula="J6Tsenxls02Y2thG7g4Tyg" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="99YDLSpRXkuWN5pQUbDhzw" name="DrugAbsorption_para" description="Drug absorption paracellular" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="1" processRateParameterPersistable="0" formula="zNwUdgJeDkSHS0BTqpZDFg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
@@ -17,14 +17,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="ZJ4hCVC8-UqghpF7u9U4Zg" name="DrugAbsorption_trans" description="Drug absorption transcellular" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="1" processRateParameterPersistable="0" formula="HeYQNRGB9UeBuLGuRwRYEA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="zZLdLNQ-4UeT7DmyD0hd6w" name="DrugAbsorption_trans" description="Drug absorption transcellular" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="1" processRateParameterPersistable="0" formula="tTf5e3xQSEyo-etPhxZYXg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="Feces" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Intracellular" />
           <MatchTagCondition tag="Mucosa" />
@@ -32,14 +32,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="JhYxwcmvy0qX_MR8STI0_w" name="LumenDrugTransport_cae" description="Lumen drug transport from Lower Ileum to Cecum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="kcldIDNAVEqsU6947Q7WEg" name="LumenDrugTransport_cae" description="Lumen drug transport from Lower Ileum to Cecum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LowerIleum" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Caecum" />
           <MatchTagCondition tag="Lumen" />
@@ -47,14 +47,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="zuSZSnyHMkGfre36PX8DOw" name="LumenDrugTransport_colasc" description="Lumen drug transport from Cecum to Colon Ascendens" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="B4wNdQFIYEu7o3apt88hug" name="LumenDrugTransport_colasc" description="Lumen drug transport from Cecum to Colon Ascendens" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Caecum" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonAscendens" />
           <MatchTagCondition tag="Lumen" />
@@ -62,14 +62,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="MW4vOEKuAkmDfexjfszIzw" name="LumenDrugTransport_coldesc" description="Lumen drug transport from Colon Transversum to Colon Descendens" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="gzyfRQltfE-LNkZViHebtA" name="LumenDrugTransport_coldesc" description="Lumen drug transport from Colon Transversum to Colon Descendens" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonTransversum" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonDescendens" />
           <MatchTagCondition tag="Lumen" />
@@ -77,14 +77,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="3_8z2cyzXE6nK7Ali82Glg" name="LumenDrugTransport_colsigm" description="Lumen drug transport from Colon Descendens to Colon Sigmoid" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="Dbfu4Z1qG0G8krNh_Dqvdw" name="LumenDrugTransport_colsigm" description="Lumen drug transport from Colon Descendens to Colon Sigmoid" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonDescendens" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonSigmoid" />
           <MatchTagCondition tag="Lumen" />
@@ -92,14 +92,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="YpP3HZsk0k6JLcEyi0X7eQ" name="LumenDrugTransport_coltrans" description="Lumen drug transport from Colon Ascendens to Colon Transversum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="LVj5Rx50KEOIV07Gp9kv8g" name="LumenDrugTransport_coltrans" description="Lumen drug transport from Colon Ascendens to Colon Transversum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonAscendens" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonTransversum" />
           <MatchTagCondition tag="Lumen" />
@@ -107,14 +107,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="72Mjgkftvkus1yD6PW_aLQ" name="LumenDrugTransport_duo" description="Lumen drug transport from Stomach to Duodenum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="blzqFTWz3EmfBNsjNaAdvA" name="LumenDrugTransport_duo" description="Lumen drug transport from Stomach to Duodenum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="Stomach" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Duodenum" />
           <MatchTagCondition tag="Lumen" />
@@ -122,14 +122,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="zouilqeZQUSe7aSJ9c5aNw" name="LumenDrugTransport_fec" description="Lumen drug transport from Rectum to Feces" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="t7tvjm9udECda0dllGu3PA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="A7DGH25X40iDepSR8v7adQ" name="LumenDrugTransport_fec" description="Lumen drug transport from Rectum to Feces" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="HDjdSj2bGkywUp8rH9KMLA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="Rectum" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Feces" />
           <MatchTagCondition tag="Lumen" />
@@ -137,14 +137,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="cD3T9lBRHkWO3c-X5V3Alg" name="LumenDrugTransport_lil" description="Lumen drug transport from Upper Ileum to Lower Ileum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="fRIpPFj33UOR3yKdAMxk2g" name="LumenDrugTransport_lil" description="Lumen drug transport from Upper Ileum to Lower Ileum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="UpperIleum" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LowerIleum" />
           <MatchTagCondition tag="Lumen" />
@@ -152,14 +152,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="obTjNXdIZUOdgp8viNHfXA" name="LumenDrugTransport_lje" description="Lumen drug transport from Upper Jejunum to Lower Jejunum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="QC9OyZp5lUqF_IJwBUvhJg" name="LumenDrugTransport_lje" description="Lumen drug transport from Upper Jejunum to Lower Jejunum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="UpperJejunum" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LowerJejunum" />
           <MatchTagCondition tag="Lumen" />
@@ -167,14 +167,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="NzopgCyZPka_5hxx1-ZaLg" name="LumenDrugTransport_rect" description="Lumen drug transport from Colon Sigmoid to Rectum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="qXLRQOiZskmUrey94lp_eg" name="LumenDrugTransport_rect" description="Lumen drug transport from Colon Sigmoid to Rectum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ColonSigmoid" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="Rectum" />
@@ -182,14 +182,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="3UWQEZYXuU-Y5-nFymOmUQ" name="LumenDrugTransport_uil" description="Lumen drug transport from Lower Jejunum to Upper Ileum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="_2Jb2eFKbkW8z7gzEPRXKw" name="LumenDrugTransport_uil" description="Lumen drug transport from Lower Jejunum to Upper Ileum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LowerJejunum" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="UpperIleum" />
@@ -197,14 +197,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="78vb5vjD_EuKqlsqYAL5VQ" name="LumenDrugTransport_uje" description="Lumen drug transport from Duodenum to Upper Jejunum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="zfOV1PlgX0qi-EukhsZ6Aw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="1I1GfVM_sUqVRPObTvXYMg" name="LumenDrugTransport_uje" description="Lumen drug transport from Duodenum to Upper Jejunum" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WZ1LjHYFb0-2hivGVQw8UA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Duodenum" />
           <MatchTagCondition tag="Lumen" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lumen" />
           <MatchTagCondition tag="UpperJejunum" />
@@ -212,15 +212,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="Ltm0zuUOt025KUNh8guqfw" name="MassTransfer_PeriportalToPericentral_BC" description="Mass transfer from Liver Periportal Blood Cells to Liver Pericentral Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="eKAhow-3EUCi6wVyxVRC7A" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="4-J_o4CywU2uiFuY5ukZkA" name="MassTransfer_PeriportalToPericentral_BC" description="Mass transfer from Liver Periportal Blood Cells to Liver Pericentral Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="O6rXmox7okSpzcP7wgHyvg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Periportal" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Liver" />
@@ -229,15 +229,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="MOD-9oovhkiQrOffLCixCA" name="MassTransfer_PeriportalToPericentral_Plasma" description="Mass transfer from Liver Periportal Plasma to Liver Pericentral Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="7NCJ0yYe7kq-Xl6VTeqT-g" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="DNElFJAI7U6XC6GwuL3RQA" name="MassTransfer_PeriportalToPericentral_Plasma" description="Mass transfer from Liver Periportal Plasma to Liver Pericentral Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="cUt9wAMpN0WQiM9QXSnQKQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Periportal" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Pericentral" />
@@ -246,14 +246,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="AZ4wPfa7MEGqco1OsYWfzQ" name="MassTransferBloodPool2OrgPl" description="Mass transfer from Arterial Blood: Plasma to organ: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="M39IHyDb50C4r6dDxw6MoQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="0djQWgWl0EyW6LjIcBNwqA" name="MassTransferBloodPool2OrgPl" description="Mass transfer from Arterial Blood: Plasma to organ: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="V8vOZnAV_EWm1ZGUj3sXkQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ArterialBlood" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="ArterialBlood" />
           <NotMatchTagCondition tag="Lung" />
@@ -262,14 +262,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="SpiD5IeA3E2QmSdhJRlYMw" name="MassTransferBloodPool2OrgPl_liv" description="Mass transfer from Portal Vein: Plasma to Liver: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ZKASv0X7EUSh9P-hNKjPlA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="GV9cXZInOE-vPnJfBJ5ecA" name="MassTransferBloodPool2OrgPl_liv" description="Mass transfer from Portal Vein: Plasma to Liver: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="EiNgd9vtS0i926rJK48w5w" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PortalVein" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Plasma" />
@@ -277,14 +277,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="OWZsnFPJkEuIvzDSDXGXEw" name="MassTransferBloodPool2OrgPl_lng" description="Mass transfer from Venous Blood: Plasma to Lung: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="lXVqWsfWXE6wz6T3HEAX0A" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="TMF-2_dKQkS105H8Ov3dmw" name="MassTransferBloodPool2OrgPl_lng" description="Mass transfer from Venous Blood: Plasma to Lung: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="frMXG9ul2kaoVtyEaaJZkQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="VenousBlood" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lung" />
           <MatchTagCondition tag="Plasma" />
@@ -292,14 +292,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="CuyEJdGc8UqVk_hZg4ByhQ" name="MassTransferBloodPool2OrgRBC" description="Mass transfer from ArterialBlood: BloodCells to organ: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="7T58KXG3JEm4fXodO4ljXA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="cK6VHY_EiEKZg6ni-Hsm4g" name="MassTransferBloodPool2OrgRBC" description="Mass transfer from ArterialBlood: BloodCells to organ: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="m5YoYuEimEW1GkxwE577Xg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ArterialBlood" />
           <MatchTagCondition tag="BloodCells" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="ArterialBlood" />
           <MatchTagCondition tag="BloodCells" />
@@ -308,14 +308,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="p26i3M27aEWcktVxQfkpPA" name="MassTransferBloodPool2OrgRBC_liv" description="Mass transfer from Portal Vein: Blood Cells to Liver: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="oLZG_P0a6Ey0HPkZOFojKQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="-UhDWlwMKkWl-xkZ5U8hYg" name="MassTransferBloodPool2OrgRBC_liv" description="Mass transfer from Portal Vein: Blood Cells to Liver: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="_2HmooYWy0WIUQ9jxlb1hg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PortalVein" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Liver" />
@@ -323,14 +323,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="dfhnOXiiU0eZw8jr5Ayi2g" name="MassTransferBloodPool2OrgRBC_lng" description="Mass transfer from Venous Blood: Blood Cells to Lung: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="XmQFB6bL7E6GU0_aFjAFWw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="-IxDB9jGfkWLYHaYBf4Qxg" name="MassTransferBloodPool2OrgRBC_lng" description="Mass transfer from Venous Blood: Blood Cells to Lung: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="VESm8mfRDka7_XE7bVdt-Q" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Lung" />
@@ -338,15 +338,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="xqBS6AhUpEyladiPIgQ2DQ" name="MassTransferLinPlasma2BloodPool_Pve" description="Mass transfer from Large Intestine :Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="6P_2voF9IEqMXFxxRMHTAw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="FBxM1Igi-E6-VOWH-h3i3Q" name="MassTransferLinPlasma2BloodPool_Pve" description="Mass transfer from Large Intestine :Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="DXMmM8YWPku5K_uwtZOdkQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LargeIntestine" />
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PortalVein" />
@@ -354,15 +354,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="uGo55ZXK7kueRqm7dpj4Ng" name="MassTransferLinRBC2BloodPool_Pve" description="Mass transfer from Large Intestine to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="gfOVbXbv20eTIVYIGlH88g" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="vpQJb7FMjEmsxy6O5VSoDQ" name="MassTransferLinRBC2BloodPool_Pve" description="Mass transfer from Large Intestine to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="QjFAGD8zUUW_SqIFAEs9cg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="LargeIntestine" />
           <NotMatchTagCondition tag="Mucosa" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PortalVein" />
@@ -370,15 +370,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="qnuCdRc8gUCs-1n_AhANfw" name="MassTransferLINToMucosaBC" description="Mass transfer from Large Intestine:Blood Cells to Mucosa: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ddaz3jjNvEWVCEUM4BGOtA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="edBsjwAjCkegb22F2BcHpg" name="MassTransferLINToMucosaBC" description="Mass transfer from Large Intestine:Blood Cells to Mucosa: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Zt4EmfYiWkOt6L5_rnc38A" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="LargeIntestine" />
           <NotMatchTagCondition tag="Mucosa" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Mucosa" />
@@ -386,15 +386,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="HYM6f_2b_EiMxeNFHmuhWQ" name="MassTransferLINToMucosaPlasma" description="Mass transfer from Large Intestine:Plasma to Mucosa: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="db6zcPA0ukC8009CTNEVqQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="ZYHjGTOQTk2_MJK54nH6yQ" name="MassTransferLINToMucosaPlasma" description="Mass transfer from Large Intestine:Plasma to Mucosa: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="8oFcdHXqYUqjWvs_liEcTw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="LargeIntestine" />
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
@@ -402,14 +402,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="xItrW3nw8EiO5XMukNpfUg" name="MassTransferMucosaToPveBC" description="Mass transfer from Mucosa:Blood Cells To Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="8MAqP2msMUu08dX5P-lMeA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="I5hc3GpEPUauZWJfj8MjZg" name="MassTransferMucosaToPveBC" description="Mass transfer from Mucosa:Blood Cells To Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ynqTA43P6UGX1bQ_Ah8xkA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Mucosa" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PortalVein" />
@@ -417,14 +417,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="w96uJ201ukGlRuBDuHD7Lw" name="MassTransferMucosaToPvePlasma" description="Mass transfer from Mucosa:Plasma To Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Y6Tw-FUpREacIj_X-Grkow" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="bOyjCwM11ESatUVYvwMU9w" name="MassTransferMucosaToPvePlasma" description="Mass transfer from Mucosa:Plasma To Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="XF9fChM_D0qbQuxm4RsrjA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PortalVein" />
@@ -432,8 +432,8 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="J5tQHvoEQ0-K4nMfhy8X8Q" name="MassTransferOrgPl2BloodPool" description="Mass transfer from organ: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Sub9yfsPPk-3ZedhdAUKOw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="cS-OJghUfEidvaLK3xa2vA" name="MassTransferOrgPl2BloodPool" description="Mass transfer from organ: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="_B9Uo4ROnE-f6Qdtg-sYKw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="Liver" />
           <NotMatchTagCondition tag="Lung" />
@@ -441,7 +441,7 @@
           <NotMatchTagCondition tag="VenousBlood" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="VenousBlood" />
@@ -449,15 +449,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="Is50xIESHUu8vC_s22y8QQ" name="MassTransferOrgPl2BloodPool_Liv" description="Mass transfer from Liver: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="i-hQu9qLKkGo3-MQXijs2Q" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="oUDtPTy0l0-VjpEP1cXfUQ" name="MassTransferOrgPl2BloodPool_Liv" description="Mass transfer from Liver: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="OKx4Vfzq80OMwFvw3lPo3A" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Periportal" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="VenousBlood" />
@@ -465,15 +465,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="PGp7Sh8bu06WZVXe4lkfCA" name="MassTransferOrgPl2BloodPool_Liv_Pericentral" description="Mass transfer from Liver: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="e1J0-In7106a7XaKYmmujw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="Jc2TOe_w0UmFjp6Hu5JWOQ" name="MassTransferOrgPl2BloodPool_Liv_Pericentral" description="Mass transfer from Liver: Plasma to Venous Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="sag9rPVV_Eqa8zCgqTFEDw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Pericentral" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="VenousBlood" />
@@ -481,14 +481,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="0F4kJSeO7kmJp8ulrdMJ3Q" name="MassTransferOrgPl2BloodPool_Lng" description="Mass transfer from Lung: Plasma to Arterial Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="W1gt1d52kEWeERz2cfzr2Q" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="ncL0j6JNIkmo2GdhOqiUUw" name="MassTransferOrgPl2BloodPool_Lng" description="Mass transfer from Lung: Plasma to Arterial Blood: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="aPQHJqvymEGrToL2L0512g" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Lung" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ArterialBlood" />
           <MatchTagCondition tag="Plasma" />
@@ -496,8 +496,8 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="vyPFwJfGtEiWvGjr-AFqtg" name="MassTransferOrgPl2BloodPool_pve" description="Mass transfer from organ: Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ltveuffZpk6YkOCt3AWJqw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="ecbd3yL2PUy9FajH3lvDlA" name="MassTransferOrgPl2BloodPool_pve" description="Mass transfer from organ: Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="w6qAR02hj0GC9v-uV81wtQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="LargeIntestine" />
           <NotMatchTagCondition tag="Mucosa" />
@@ -506,7 +506,7 @@
           <NotMatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PortalVein" />
@@ -514,8 +514,8 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="RDTdMsRDEUulOWy_UFfQ2w" name="MassTransferOrgRBC2BloodPool" description="Mass transfer from organ: Blood Cells to Arterial Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="lds6kCpC7kyRZcWw8Fusmw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="ul_NxiYcB0GKHmUO1PoAKA" name="MassTransferOrgRBC2BloodPool" description="Mass transfer from organ: Blood Cells to Arterial Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="2SJ-eXk8SkSKLHLXnNHfQw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <NotMatchTagCondition tag="Liver" />
@@ -523,7 +523,7 @@
           <NotMatchTagCondition tag="VenousBlood" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood" />
@@ -531,15 +531,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="lV-gWNtZq0CEk4YUUZ1OiA" name="MassTransferOrgRBC2BloodPool_Liv" description="Mass transfer from Liver: Blood Cells to Venous Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="DekKVBqe-UCcpsTmyAsZ9w" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="ro2N9_UYY0mZw7XlZqufRw" name="MassTransferOrgRBC2BloodPool_Liv" description="Mass transfer from Liver: Blood Cells to Venous Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="fqHkmDWw9k6AUE5xT1YmPQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Periportal" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood" />
@@ -547,15 +547,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="zkKD7J81hkm8Z-0UMH9Cvw" name="MassTransferOrgRBC2BloodPool_Liv_Pericentral" description="Mass transfer from Liver: Blood Cells to Venous Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="eOyki0T42UucgB7ZLwJdnA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="m4GxadIPskuD3ajdYbNF3Q" name="MassTransferOrgRBC2BloodPool_Liv_Pericentral" description="Mass transfer from Liver: Blood Cells to Venous Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="frUS4RDwuUqyjqHtACqBmw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Liver" />
           <MatchTagCondition tag="Pericentral" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood" />
@@ -563,14 +563,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="lf2lwuUSpk6G9JeW5CS-Zw" name="MassTransferOrgRBC2BloodPool_Lng" description="Mass transfer from Lung: Blood Cells to Arterial Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="T1y_A4WpKEO6YY1B17ZQkw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="BysAeTocrkycV5cvyAmhGg" name="MassTransferOrgRBC2BloodPool_Lng" description="Mass transfer from Lung: Blood Cells to Arterial Blood: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="MATcVFFm60OvTApk7jkaKA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Lung" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="ArterialBlood" />
           <MatchTagCondition tag="BloodCells" />
@@ -578,8 +578,8 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="Uewhrcb-V02tABiDQLahQw" name="MassTransferOrgRBC2BloodPool_Pve" description="Mass transfer from organ: Blood Cells to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="F_79Q_jtJU-adaN3F4rkZg" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="gpNW62523k-O02MfieQlgg" name="MassTransferOrgRBC2BloodPool_Pve" description="Mass transfer from organ: Blood Cells to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="uwT3EXFAaUOSUPa3J0rDZg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <NotMatchTagCondition tag="LargeIntestine" />
@@ -589,7 +589,7 @@
           <NotMatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PortalVein" />
@@ -597,15 +597,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="hzc47iIlNEWUTsI8lSkWAg" name="MassTransferSinPlasma2BloodPool_Pve" description="Mass transfer from Small Intestine:Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="6P_2voF9IEqMXFxxRMHTAw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="kBvf5TiQxU-l9CVojywn7w" name="MassTransferSinPlasma2BloodPool_Pve" description="Mass transfer from Small Intestine:Plasma to Portal Vein: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="DXMmM8YWPku5K_uwtZOdkQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PortalVein" />
@@ -613,15 +613,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="LvMua1mq2kS7ebX5FkGOHw" name="MassTransferSinRBC2BloodPool_Pve" description="Mass transfer from Small Intestine:Blood Cells to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="gfOVbXbv20eTIVYIGlH88g" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="vMBiLtt2r0mJ3Vrvug8SJg" name="MassTransferSinRBC2BloodPool_Pve" description="Mass transfer from Small Intestine:Blood Cells to Portal Vein: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="QjFAGD8zUUW_SqIFAEs9cg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PortalVein" />
@@ -629,15 +629,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="OxGxKC0IbE2c4daChKjTqA" name="MassTransferSINToMucosaBC" description="Mass transfer from Small Intestine:Blood Cells to Mucosa: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ddaz3jjNvEWVCEUM4BGOtA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="f2A5uR9RKU28iFvnfyWaoA" name="MassTransferSINToMucosaBC" description="Mass transfer from Small Intestine:Blood Cells to Mucosa: Blood Cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Zt4EmfYiWkOt6L5_rnc38A" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Mucosa" />
@@ -645,15 +645,15 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="eZ9LPMlPQU2M4JF4J85QKw" name="MassTransferSINToMucosaPlasma" description="Mass transfer from Small Intestine:Plasma to Mucosa: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="db6zcPA0ukC8009CTNEVqQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="t_SxvyJYxECaqHTB4_KiRQ" name="MassTransferSINToMucosaPlasma" description="Mass transfer from Small Intestine:Plasma to Mucosa: Plasma" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="8oFcdHXqYUqjWvs_liEcTw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="SmallIntestine" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Mucosa" />
           <MatchTagCondition tag="Plasma" />
@@ -661,21 +661,21 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="NhtaYA2j7U6Xb45jFn4_qw" name="PassiveDiffusionInt2Cell" description="Passive diffusion to cell" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="t1G17rG44EyhWdNhMPgVXw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="xNlebgUS3Eq5bKueOK0s-g" name="PassiveDiffusionInt2Cell" description="Passive diffusion to cell" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="SO27xiSWbkSo-lZfyNKCZA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Interstitial" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Intracellular" />
         </DescriptorConditions>
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="O-dQlbXLUkCcRYaqsXr_1w" name="PassiveDiffusionPl2Int" description="Passive diffusion from plasma to interstitial space" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="wuwgavE9XUKs3GLA4aLp-A" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="8HRDfkDAlUKvf6j7B8_wEQ" name="PassiveDiffusionPl2Int" description="Passive diffusion from plasma to interstitial space" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="WtRC_YSW7EGntu19eCuiyA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <NotMatchTagCondition tag="ArterialBlood" />
           <NotMatchTagCondition tag="Endogenous_IgG" />
@@ -684,34 +684,34 @@
           <NotMatchTagCondition tag="VenousBlood" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Interstitial" />
         </DescriptorConditions>
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="wypQ0fvzyEGh4EBNRNAofg" name="PassiveDiffusionPl2RBC" description="Passive diffusion to blood cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Vv5VbmZOXEm2HgNmQws7dg" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="Awx7sD_oV0SarrKmrTBLCw" name="PassiveDiffusionPl2RBC" description="Passive diffusion to blood cells" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="DkUoq1gfPEyonGQifSosjQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
         </DescriptorConditions>
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="InPe2b22T0a_8GV5LpYsJQ" name="PassiveDiffusionPlsToSaliva" description="Passive diffusion plasma to saliva" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="A7gcM2EqZUu7XFkS3dpMlw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="-3ymmnCCXkOeUknkl2z-Ng" name="PassiveDiffusionPlsToSaliva" description="Passive diffusion plasma to saliva" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="sxxjN8VcZ0-ikeF-zE-jhg" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Saliva" />
           <MatchTagCondition tag="SalivaGland" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Saliva" />
           <NotMatchTagCondition tag="SalivaGland" />
@@ -719,13 +719,13 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="C6wOal4klE2ipZm-BpmDow" name="GallbladderEmptying" description="Gallbladder emptying" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="n64CwOjHYkWBTrtP8rczbQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="TlI-WuI59kGb07uXkjHnhw" name="GallbladderEmptying" description="Gallbladder emptying" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="8REfIz2g-0eMTXGxes6Eow" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Gallbladder" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Duodenum" />
           <MatchTagCondition tag="Lumen" />
@@ -733,14 +733,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="TOqVGg47sEirSAT1go2vuQ" name="MassTransferArterialCordBlood2PlacentaPl" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="o_0nY2qur0e-8DwHcA8FtQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="1EC8EmNOGUm0nwbxPH-mBQ" name="MassTransferArterialCordBlood2PlacentaPl" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="seJlullP-0CJ3r1LiAm9sw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="ArterialBlood_UmbilicalCord" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PlacentaFetal" />
@@ -748,14 +748,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="CgCvn7xnwEGW9qkdOsLTQw" name="MassTransferArterialCordBlood2PlacentaRBC" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="c8ht43DVhEGYwEZmaxbgQA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="owpg-mllnUCsK0BlZO0hPw" name="MassTransferArterialCordBlood2PlacentaRBC" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="kVW6J3ql5kKUM7gw-gRXdw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="ArterialBlood_UmbilicalCord" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PlacentaFetal" />
@@ -763,14 +763,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="luSv8Dpmp0mrDauZG8nI5g" name="MassTransferPlacentaPl2VeinCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="w8hcsyAFtEa2lCrZWpI1mg" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="x_IB7CGh8Ea1I4QmL9WbPA" name="MassTransferPlacentaPl2VeinCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="cFwxSafqmk2rEg26gLmgrw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PlacentaFetal" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="VenousBlood_UmbilicalCord" />
           <MatchTagCondition tag="Plasma" />
@@ -778,14 +778,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="OkFadon4KkamegTibguGgQ" name="MassTransferPlacentaRBC2VeinCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="rhQXmEphgEqQgjckurh_aQ" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="fmpA1TtnaE2CJBWo_myfKA" name="MassTransferPlacentaRBC2VeinCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="TLHo5qxI0kKH4E_BdEkunw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="PlacentaFetal" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood_UmbilicalCord" />
@@ -793,14 +793,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="b8hJiZCO_E6R17-35DMcvw" name="MassTransferVeinCordBlood2FetusPl" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="ifrcFzfpc0uEDSRJ8HFE0Q" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="49YrqOjQ8EK1eFgZMmH3sw" name="MassTransferVeinCordBlood2FetusPl" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="rOdc7jJ0q0ivJGckXV7quQ" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="VenousBlood_UmbilicalCord" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="Fetus" />
@@ -808,14 +808,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="o5Toyq5HdE-R_s_lcbvadQ" name="MassTransferVeinCordBlood2FetusRBC" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="jgro0IPNIUO0Rm10ypyU3w" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="RV-vv77UWkqWt5_Sj-dK_Q" name="MassTransferVeinCordBlood2FetusRBC" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="UjZ_5CBExk6TCISVNi32HA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="VenousBlood_UmbilicalCord" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Fetus" />
@@ -823,14 +823,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="wQClVBuZcECcgPcs9j9XWQ" name="MassTransferFetusPl2ArterialCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="MVAXwM4-N0mSmarHPzKiiw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="9OKaIYjwSke6U_WhCW9sWg" name="MassTransferFetusPl2ArterialCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="K9NaUvEfBk--eBXYNuUacA" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="Fetus" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="ArterialBlood_UmbilicalCord" />
@@ -838,14 +838,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="SCI_DYLJLkKjhELLZOWjBw" name="MassTransferFetusRBC2ArterialCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="aDrZWQKdi065Eg9UbO-GAA" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="OzhcIKS0I0ewRqx89azSSQ" name="MassTransferFetusRBC2ArterialCordBlood" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="xtZ1fOQGqUGIqXAi0cATEw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="Fetus" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="BloodCells" />
           <MatchTagCondition tag="ArterialBlood_UmbilicalCord" />
@@ -853,14 +853,14 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="ynbiFTuv502Vo_UBKArX4A" name="PassiveDiffusionPlacentaBarrier" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="4pTF0kMBUkOebgPbnoWSUw" transportType="0">
-      <SourceCriteria>
+    <TransportBuilder id="AtYDs_daDEuU4V8PVvZKpg" name="PassiveDiffusionPlacentaBarrier" icon="TRANSPORT" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="fBvtua2P4EimdZ1FB0BGiw" transportType="0">
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Plasma" />
           <MatchTagCondition tag="PlacentaMaternal" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Intracellular" />
           <MatchTagCondition tag="PlacentaFetal" />
@@ -868,57 +868,62 @@
       </TargetCriteria>
       <MoleculeList forAll="1" />
     </TransportBuilder>
-    <TransportBuilder id="64h5lmcLf0CJ53iqJS1t2g" name="Renal Clearances-renal plasma clearance" icon="Kidney" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="HmNO14tRj0GLiQ7B6ING5w" transportType="0">
+    <TransportBuilder id="jj172ilpfEWEROZVw3prYA" name="Renal Clearances-renal plasma clearance" icon="Kidney" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="gzp5gKQs0ES1J0nMyzuS1g" transportType="0">
       <Children>
-        <Parameter id="JBHuX51wRkqCMzZkh3nUDA" name="Body weight" description="Body weight" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="73.0001790836752" displayUnit="kg">
+        <Parameter id="fb6P-Lat1k2aukA1ViuDqA" name="Body weight" description="Body weight" icon="Parameter" persistable="0" isFixedValue="0" dim="Mass" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="73.0001790836752" displayUnit="kg">
           <Info min="0" flag="42" seq="1" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="Ca2bDHhwwkqJlyWsg8t7QA" name="Volume (kidney)" description="Volume of the kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.43771998528" displayUnit="l">
+        <Parameter id="dJCL8aAak0eFKlqn4lWldg" name="Volume (kidney)" description="Volume of the kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.43771998528" displayUnit="l">
           <Info min="0" flag="42" seq="2" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="6eObdHq6AkybhAu2C5pGaQ" name="Hematocrit" description="Hematocrit" icon="Parameter" persistable="0" isFixedValue="0" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.47">
+        <Parameter id="NytU7M8FUkWqS7uhjbXI6w" name="Hematocrit" description="Hematocrit" icon="Parameter" persistable="0" isFixedValue="0" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.47">
           <Info min="0" max="1" flag="10" seq="3" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="QFzMMpD55UumkulOpwOvqA" name="Blood flow rate (kidney)" description="Blood flow rate to kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="1.32500028144182" displayUnit="l/min">
+        <Parameter id="Na79clRMxUO8MhmWoSU67A" name="Blood flow rate (kidney)" description="Blood flow rate to kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="1.32500028144182" displayUnit="l/min">
           <Info min="0" flag="42" seq="4" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="DeTEkdSGbE2W8ev_kl8pAA" name="Fraction unbound (experiment)" description="Fraction unbound in the experiment" icon="Parameter" persistable="0" isFixedValue="0" dim="Fraction" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.95">
+        <Parameter id="4EmThO9zjk6Yr1ykHBVqsg" name="Fraction unbound (experiment)" description="Fraction unbound in the experiment" icon="Parameter" persistable="0" isFixedValue="0" dim="Fraction" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.95">
           <Info min="0" max="1" flag="42" seq="5" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="tmyUYnmI1Uiu0NtYb6umyA" name="Plasma clearance" description="Plasma clearance" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow per weight" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.005" displayUnit="ml/min/kg">
+        <Parameter id="yEERgJpFhEOJTXo3colJOQ" name="Plasma clearance" description="Plasma clearance" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow per weight" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.005" displayUnit="ml/min/kg">
           <Info min="0" flag="58" seq="6" ref="0" bb="4" group="130" />
         </Parameter>
-        <Parameter id="k182SekgNESwCp3f2QZC6g" name="Specific clearance" description="Intrinsic clearance normalized to the volume where the process occurs" icon="Parameter" persistable="0" isFixedValue="0" dim="Inversed time" quantityType="Parameter" negativeValuesAllowed="1" formula="5LEzsCm3JkywEmcctqzxHg" isDefault="1" displayUnit="1/min">
+        <Parameter id="LQ6rmqUiAUyk8PvVXLCTPw" name="Specific clearance" description="Intrinsic clearance normalized to the volume where the process occurs" icon="Parameter" persistable="0" isFixedValue="1" dim="Inversed time" quantityType="Parameter" negativeValuesAllowed="1" formula="8JaQsref7kW79csfrcy0nA" isDefault="0" value="0.0222" displayUnit="1/min">
+          <ValueOrigin source="Unknown" />
           <Info min="0" flag="122" seq="7" ref="0" bb="4" group="131" />
         </Parameter>
       </Children>
-      <SourceCriteria>
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Urine" />
         </DescriptorConditions>
       </TargetCriteria>
-      <MoleculeList forAll="0" />
+      <MoleculeList forAll="0">
+        <MoleculeNames>
+          <MoleculeNamesChild>Metronidazole</MoleculeNamesChild>
+        </MoleculeNames>
+      </MoleculeList>
     </TransportBuilder>
-    <TransportBuilder id="uEGwE91iv0CDCNrAun9vpQ" name="Glomerular Filtration-GFR" icon="GlomerularFiltration" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="kiHYSQTMvk6muxGAKfIpAw" transportType="0">
+    <TransportBuilder id="hDmIxUTp-Eqrj2Wn43TzbA" name="Glomerular Filtration-GFR" icon="GlomerularFiltration" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="A-bYinvxR0qedGvW9GaGOw" transportType="0">
       <Children>
-        <Parameter id="D2o8woBSW0GLgKn3RcpyfA" name="GFR fraction" description="Fraction of glomerular filtration rate used for passive renal elimination.&#xD;&#xA;GFR fraction should be reduced in the case of:&#xD;&#xA;* actively reabsorbed molecules&#xD;&#xA;* macromolecules" icon="Parameter" persistable="0" isFixedValue="0" dim="Fraction" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="1">
+        <Parameter id="ml4iJOXunkKk19I_Q-yDZQ" name="GFR fraction" description="Fraction of glomerular filtration rate used for passive renal elimination.&#xD;&#xA;GFR fraction should be reduced in the case of:&#xD;&#xA;* actively reabsorbed molecules&#xD;&#xA;* macromolecules" icon="Parameter" persistable="0" isFixedValue="0" dim="Fraction" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="1">
           <Info min="0" flag="122" seq="1" ref="0" bb="4" group="131" />
         </Parameter>
       </Children>
-      <SourceCriteria>
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Urine" />
@@ -926,25 +931,25 @@
       </TargetCriteria>
       <MoleculeList forAll="0" />
     </TransportBuilder>
-    <TransportBuilder id="upMs71OeNk6BAWzhYoEATg" name="Renal Clearances-Tubular Secretion, First Order" icon="OTHER" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="CFWhdQ5aOEChmhzhO6friQ" transportType="0">
+    <TransportBuilder id="M_eub4YQFEKyGWOlg6i1Ow" name="Renal Clearances-Tubular Secretion, First Order" icon="OTHER" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Cv12lpQlJkGW48hWgL49XA" transportType="0">
       <Children>
-        <Parameter id="KgUCzM_dyUKjcLrBsF6LRw" name="TSspec" description="Specific clearance for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Inversed time" quantityType="Parameter" negativeValuesAllowed="1" formula="DL07Q9OO3EWiKAG9fCIjTQ" isDefault="1" displayUnit="1/min">
+        <Parameter id="fEIXjAcx6EqX6X9T_XEy3g" name="TSspec" description="Specific clearance for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Inversed time" quantityType="Parameter" negativeValuesAllowed="1" formula="FQr2pEZz1E6X23QKV8zhLQ" isDefault="1" displayUnit="1/min">
           <Info flag="10" seq="1" ref="0" bb="2" group="131" />
         </Parameter>
-        <Parameter id="-urLu6iyMEyv4KVqlAskCA" name="Tubular secretion" description="Intrinsic clearance for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0" displayUnit="l/min">
+        <Parameter id="T8Rex2idMUi8qeScEmET7g" name="Tubular secretion" description="Intrinsic clearance for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Flow" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0" displayUnit="l/min">
           <Info flag="10" seq="1" ref="0" bb="2" group="130" />
         </Parameter>
-        <Parameter id="pbRBZrPyVUmBVnBc1jEURQ" name="Volume (kidney)" description="Standard kidney volume of the European 30 yr old woman" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.403441765" displayUnit="l">
+        <Parameter id="2P-fnq1P30q4lfhfuX_KyA" name="Volume (kidney)" description="Standard kidney volume of the European 30 yr old woman" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.403441765" displayUnit="l">
           <Info flag="10" seq="1" ref="0" bb="2" group="130" />
         </Parameter>
       </Children>
-      <SourceCriteria>
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Urine" />
@@ -952,28 +957,28 @@
       </TargetCriteria>
       <MoleculeList forAll="0" />
     </TransportBuilder>
-    <TransportBuilder id="ERiSiTPYKEqAvam10wXUEA" name="Renal Clearances-Tubular Secretion, Michaelis-Menten type kinetics" icon="OTHER" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="Ifq2lbud_0GeWD3CS2OpJQ" transportType="0">
+    <TransportBuilder id="5a2wV8wjXESnwb6HuLURYQ" name="Renal Clearances-Tubular Secretion, Michaelis-Menten type kinetics" icon="OTHER" mode="Logical" containerType="Other" dimension="Amount per time" createProcessRateParameter="0" processRateParameterPersistable="0" formula="l-b3FbIwrkuiUA_MU2UuyQ" transportType="0">
       <Children>
-        <Parameter id="CWLcrpjYMUWq5SmUOwRzpA" name="Km" description="Michaelis-Menten constant" icon="Parameter" persistable="0" isFixedValue="0" dim="Concentration (molar)" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="350" displayUnit="µmol/l">
+        <Parameter id="UFvrbi5J1k2Xi9jU3Ioi4g" name="Km" description="Michaelis-Menten constant" icon="Parameter" persistable="0" isFixedValue="0" dim="Concentration (molar)" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="350" displayUnit="µmol/l">
           <Info flag="10" seq="1" ref="0" bb="2" group="131" />
         </Parameter>
-        <Parameter id="GxXVNFQ1nUOz7w8acY1MbA" name="TSmax" description="Intrinsic maximum rate for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount per time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="95.36" displayUnit="µmol/min">
+        <Parameter id="HtXNfj-Z4k6um3PTIIRdNw" name="TSmax" description="Intrinsic maximum rate for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Amount per time" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="95.36" displayUnit="µmol/min">
           <Info flag="10" seq="1" ref="0" bb="2" group="130" />
         </Parameter>
-        <Parameter id="cMDgwT0NpUSY0BK9LBFRTw" name="TSmax_spec" description="Specific maximum rate for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Concentration (molar) per time" quantityType="Parameter" negativeValuesAllowed="1" formula="LRfW2DGBYEmgAm5wfFkTVQ" isDefault="1" displayUnit="µmol/l/min">
+        <Parameter id="THKjCaJJfECtMa47H3I2xw" name="TSmax_spec" description="Specific maximum rate for tubular secretion" icon="Parameter" persistable="0" isFixedValue="0" dim="Concentration (molar) per time" quantityType="Parameter" negativeValuesAllowed="1" formula="m2hTlNc75Ey9Co-xDfayEw" isDefault="1" displayUnit="µmol/l/min">
           <Info flag="10" seq="1" ref="0" bb="2" group="131" />
         </Parameter>
-        <Parameter id="eNnar42pZ02mAKsyyae0nw" name="Volume (kidney)" description="Volume of the kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.435916275082593" displayUnit="l">
+        <Parameter id="18MzBERWGUyWzN1bAuMy0w" name="Volume (kidney)" description="Volume of the kidney" icon="Parameter" persistable="0" isFixedValue="0" dim="Volume" quantityType="Parameter" negativeValuesAllowed="1" isDefault="1" value="0.435916275082593" displayUnit="l">
           <Info flag="10" seq="1" ref="0" bb="2" group="130" />
         </Parameter>
       </Children>
-      <SourceCriteria>
+      <SourceCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Plasma" />
         </DescriptorConditions>
       </SourceCriteria>
-      <TargetCriteria>
+      <TargetCriteria operator="And">
         <DescriptorConditions>
           <MatchTagCondition tag="Kidney" />
           <MatchTagCondition tag="Urine" />
@@ -984,17 +989,17 @@
   </Builders>
   <FormulaCache>
     <Formulas>
-      <Formula id="J6Tsenxls02Y2thG7g4Tyg" name="DrugAbsorption_para" dim="Amount per time" formula="DrugAbsorptionLumenToMucosaRate">
+      <Formula id="zNwUdgJeDkSHS0BTqpZDFg" name="DrugAbsorption_para" dim="Amount per time" formula="DrugAbsorptionLumenToMucosaRate">
         <Paths>
           <Path path="0" as="1" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="HeYQNRGB9UeBuLGuRwRYEA" name="DrugAbsorption_trans" dim="Amount per time" formula="DrugAbsorptionLumenToMucosaRate">
+      <Formula id="tTf5e3xQSEyo-etPhxZYXg" name="DrugAbsorption_trans" dim="Amount per time" formula="DrugAbsorptionLumenToMucosaRate">
         <Paths>
           <Path path="0" as="1" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="zfOV1PlgX0qi-EukhsZ6Aw" name="LumenDrugTransport" dim="Amount per time" formula="(OralApplicationsEnabled AND IsFloatingInLumen) ? w*Drug*FillLevelFlagNext : 0">
+      <Formula id="WZ1LjHYFb0-2hivGVQw8UA" name="LumenDrugTransport" dim="Amount per time" formula="(OralApplicationsEnabled AND IsFloatingInLumen) ? w*Drug*FillLevelFlagNext : 0">
         <Paths>
           <Path path="3" as="4" />
           <Path path="5" as="6" dim="7" />
@@ -1003,14 +1008,14 @@
           <Path path="13" as="14" />
         </Paths>
       </Formula>
-      <Formula id="t7tvjm9udECda0dllGu3PA" name="LumenDrugTransport_Feces" dim="Amount per time" formula="OralApplicationsEnabled ? w*Drug : 0">
+      <Formula id="HDjdSj2bGkywUp8rH9KMLA" name="LumenDrugTransport_Feces" dim="Amount per time" formula="OralApplicationsEnabled ? w*Drug : 0">
         <Paths>
           <Path path="3" as="4" />
           <Path path="5" as="6" dim="7" />
           <Path path="10" as="11" dim="12" />
         </Paths>
       </Formula>
-      <Formula id="eKAhow-3EUCi6wVyxVRC7A" name="MassTransferPeriportal2PericentralBC_liv" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*HCT*C_bc : 0">
+      <Formula id="O6rXmox7okSpzcP7wgHyvg" name="MassTransferPeriportal2PericentralBC_liv" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*HCT*C_bc : 0">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="19" dim="20" />
@@ -1019,7 +1024,7 @@
           <Path path="25" as="26" />
         </Paths>
       </Formula>
-      <Formula id="7NCJ0yYe7kq-Xl6VTeqT-g" name="MassTransferPeriportal2PericentralPl_liv" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*(1-HCT)*C_pls : 0">
+      <Formula id="cUt9wAMpN0WQiM9QXSnQKQ" name="MassTransferPeriportal2PericentralPl_liv" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*(1-HCT)*C_pls : 0">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="27" dim="20" />
@@ -1028,49 +1033,49 @@
           <Path path="25" as="26" />
         </Paths>
       </Formula>
-      <Formula id="M39IHyDb50C4r6dDxw6MoQ" name="MassTransferBloodPool2OrgPl" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="V8vOZnAV_EWm1ZGUj3sXkQ" name="MassTransferBloodPool2OrgPl" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="28" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="ZKASv0X7EUSh9P-hNKjPlA" name="MassTransferBloodPool2OrgPl_liv" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="EiNgd9vtS0i926rJK48w5w" name="MassTransferBloodPool2OrgPl_liv" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="lXVqWsfWXE6wz6T3HEAX0A" name="MassTransferBloodPool2OrgPl_lng" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="frMXG9ul2kaoVtyEaaJZkQ" name="MassTransferBloodPool2OrgPl_lng" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="28" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="7T58KXG3JEm4fXodO4ljXA" name="MassTransferBloodPool2OrgRBC" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="m5YoYuEimEW1GkxwE577Xg" name="MassTransferBloodPool2OrgRBC" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="28" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="oLZG_P0a6Ey0HPkZOFojKQ" name="MassTransferBloodPool2OrgRBC_liv" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="_2HmooYWy0WIUQ9jxlb1hg" name="MassTransferBloodPool2OrgRBC_liv" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="XmQFB6bL7E6GU0_aFjAFWw" name="MassTransferBloodPool2OrgRBC_lng" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="VESm8mfRDka7_XE7bVdt-Q" name="MassTransferBloodPool2OrgRBC_lng" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="28" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="6P_2voF9IEqMXFxxRMHTAw" name="MassTransferSinLinPlasma2BloodPool_Pve" dim="Amount per time" formula="(1-fractQ)*Q*(1-HCT)*C">
+      <Formula id="DXMmM8YWPku5K_uwtZOdkQ" name="MassTransferSinLinPlasma2BloodPool_Pve" dim="Amount per time" formula="(1-fractQ)*Q*(1-HCT)*C">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="30" as="31" />
@@ -1078,7 +1083,7 @@
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="gfOVbXbv20eTIVYIGlH88g" name="MassTransferSinLinRBC2BloodPool_Pve" dim="Amount per time" formula="(1-fractQ)*Q*HCT*C">
+      <Formula id="QjFAGD8zUUW_SqIFAEs9cg" name="MassTransferSinLinRBC2BloodPool_Pve" dim="Amount per time" formula="(1-fractQ)*Q*HCT*C">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="30" as="31" />
@@ -1086,34 +1091,34 @@
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="ddaz3jjNvEWVCEUM4BGOtA" name="MassTransferIntestineToMucosaBC" dim="Amount per time" formula="MassTransferIntestineToMucosaBCRate">
+      <Formula id="Zt4EmfYiWkOt6L5_rnc38A" name="MassTransferIntestineToMucosaBC" dim="Amount per time" formula="MassTransferIntestineToMucosaBCRate">
         <Paths>
           <Path path="33" as="34" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="db6zcPA0ukC8009CTNEVqQ" name="MassTransferIntestineToMucosaPlasma" dim="Amount per time" formula="MassTransferIntestineToMucosaPlasmaRate">
+      <Formula id="8oFcdHXqYUqjWvs_liEcTw" name="MassTransferIntestineToMucosaPlasma" dim="Amount per time" formula="MassTransferIntestineToMucosaPlasmaRate">
         <Paths>
           <Path path="35" as="36" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="8MAqP2msMUu08dX5P-lMeA" name="MassTransferMucosaToPveBC" dim="Amount per time" formula="MassTransferMucosaToPveBCRate">
+      <Formula id="ynqTA43P6UGX1bQ_Ah8xkA" name="MassTransferMucosaToPveBC" dim="Amount per time" formula="MassTransferMucosaToPveBCRate">
         <Paths>
           <Path path="37" as="38" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="Y6Tw-FUpREacIj_X-Grkow" name="MassTransferMucosaToPvePlasma" dim="Amount per time" formula="MassTransferMucosaToPvePlasmaRate">
+      <Formula id="XF9fChM_D0qbQuxm4RsrjA" name="MassTransferMucosaToPvePlasma" dim="Amount per time" formula="MassTransferMucosaToPvePlasmaRate">
         <Paths>
           <Path path="39" as="40" dim="2" />
         </Paths>
       </Formula>
-      <Formula id="Sub9yfsPPk-3ZedhdAUKOw" name="MassTransferOrgPl2BloodPool" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="_B9Uo4ROnE-f6Qdtg-sYKw" name="MassTransferOrgPl2BloodPool" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="i-hQu9qLKkGo3-MQXijs2Q" name="MassTransferOrgPl2BloodPool_Liv" dim="Amount per time" formula="IsLiverZonated ? 0 : (Q_liv +Q_pve)*(1-HCT)*C_pls">
+      <Formula id="OKx4Vfzq80OMwFvw3lPo3A" name="MassTransferOrgPl2BloodPool_Liv" dim="Amount per time" formula="IsLiverZonated ? 0 : (Q_liv +Q_pve)*(1-HCT)*C_pls">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="27" dim="20" />
@@ -1122,7 +1127,7 @@
           <Path path="21" as="22" dim="17" />
         </Paths>
       </Formula>
-      <Formula id="e1J0-In7106a7XaKYmmujw" name="MassTransferOrgPl2BloodPool_Liv_Pericentral" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*(1-HCT)*C_pls : 0">
+      <Formula id="sag9rPVV_Eqa8zCgqTFEDw" name="MassTransferOrgPl2BloodPool_Liv_Pericentral" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*(1-HCT)*C_pls : 0">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="27" dim="20" />
@@ -1131,28 +1136,28 @@
           <Path path="21" as="22" dim="17" />
         </Paths>
       </Formula>
-      <Formula id="W1gt1d52kEWeERz2cfzr2Q" name="MassTransferOrgPl2BloodPool_Lng" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="aPQHJqvymEGrToL2L0512g" name="MassTransferOrgPl2BloodPool_Lng" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="ltveuffZpk6YkOCt3AWJqw" name="MassTransferOrgPl2BloodPool_pve" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="w6qAR02hj0GC9v-uV81wtQ" name="MassTransferOrgPl2BloodPool_pve" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="lds6kCpC7kyRZcWw8Fusmw" name="MassTransferOrgRBC2BloodPool" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="2SJ-eXk8SkSKLHLXnNHfQw" name="MassTransferOrgRBC2BloodPool" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="DekKVBqe-UCcpsTmyAsZ9w" name="MassTransferOrgRBC2BloodPool_Liv" dim="Amount per time" formula="IsLiverZonated ? 0 : (Q_liv +Q_pve)*HCT*C_bc">
+      <Formula id="fqHkmDWw9k6AUE5xT1YmPQ" name="MassTransferOrgRBC2BloodPool_Liv" dim="Amount per time" formula="IsLiverZonated ? 0 : (Q_liv +Q_pve)*HCT*C_bc">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="19" dim="20" />
@@ -1161,7 +1166,7 @@
           <Path path="21" as="22" dim="17" />
         </Paths>
       </Formula>
-      <Formula id="eOyki0T42UucgB7ZLwJdnA" name="MassTransferOrgRBC2BloodPool_Liv_Pericentral" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*HCT*C_bc : 0">
+      <Formula id="frUS4RDwuUqyjqHtACqBmw" name="MassTransferOrgRBC2BloodPool_Liv_Pericentral" dim="Amount per time" formula="IsLiverZonated ? (Q_liv +Q_pve)*HCT*C_bc : 0">
         <Paths>
           <Path path="15" as="16" dim="17" />
           <Path path="18" as="19" dim="20" />
@@ -1170,21 +1175,21 @@
           <Path path="21" as="22" dim="17" />
         </Paths>
       </Formula>
-      <Formula id="T1y_A4WpKEO6YY1B17ZQkw" name="MassTransferOrgRBC2BloodPool_Lng" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="MATcVFFm60OvTApk7jkaKA" name="MassTransferOrgRBC2BloodPool_Lng" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="F_79Q_jtJU-adaN3F4rkZg" name="MassTransferOrgRBC2BloodPool_Pve" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="uwT3EXFAaUOSUPa3J0rDZg" name="MassTransferOrgRBC2BloodPool_Pve" dim="Amount per time" formula="Q*HCT*C_bc">
         <Paths>
           <Path path="15" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
           <Path path="23" as="24" />
         </Paths>
       </Formula>
-      <Formula id="t1G17rG44EyhWdNhMPgVXw" name="PassiveDiffusionInt2Cell" dim="Amount per time" formula="K_water_int * PA_int_cell * C_int - K_water_cell * PA_cell_int * C_cell">
+      <Formula id="SO27xiSWbkSo-lZfyNKCZA" name="PassiveDiffusionInt2Cell" dim="Amount per time" formula="K_water_int * PA_int_cell * C_int - K_water_cell * PA_cell_int * C_cell">
         <Paths>
           <Path path="41" as="42" dim="20" />
           <Path path="18" as="43" dim="20" />
@@ -1194,7 +1199,7 @@
           <Path path="50" as="51" />
         </Paths>
       </Formula>
-      <Formula id="wuwgavE9XUKs3GLA4aLp-A" name="PassiveDiffusionPl2Int" dim="Amount per time" formula="fu * P_endothelial * SA * (C_pls - C_int / K_int_pls)">
+      <Formula id="WtRC_YSW7EGntu19eCuiyA" name="PassiveDiffusionPl2Int" dim="Amount per time" formula="fu * P_endothelial * SA * (C_pls - C_int / K_int_pls)">
         <Paths>
           <Path path="41" as="43" dim="20" />
           <Path path="18" as="27" dim="20" />
@@ -1204,7 +1209,7 @@
           <Path path="60" as="61" dim="62" />
         </Paths>
       </Formula>
-      <Formula id="Vv5VbmZOXEm2HgNmQws7dg" name="PassiveDiffusionPl2RBC" dim="Amount per time" formula="SA_bc * fu * (P_pls_rbc * C_pls - P_rbc_pls * C_bc  /K_rbc)">
+      <Formula id="DkUoq1gfPEyonGQifSosjQ" name="PassiveDiffusionPl2RBC" dim="Amount per time" formula="SA_bc * fu * (P_pls_rbc * C_pls - P_rbc_pls * C_bc  /K_rbc)">
         <Paths>
           <Path path="41" as="19" dim="20" />
           <Path path="18" as="27" dim="20" />
@@ -1215,7 +1220,7 @@
           <Path path="69" as="70" dim="62" />
         </Paths>
       </Formula>
-      <Formula id="A7gcM2EqZUu7XFkS3dpMlw" name="PassiveDiffusionPlsToSaliva" dim="Amount per time" formula="fu * (C_pls_art - C_slv / K_slv_pls) * Q_slv">
+      <Formula id="sxxjN8VcZ0-ikeF-zE-jhg" name="PassiveDiffusionPlsToSaliva" dim="Amount per time" formula="fu * (C_pls_art - C_slv / K_slv_pls) * Q_slv">
         <Paths>
           <Path path="71" as="72" dim="17" />
           <Path path="73" as="74" dim="20" />
@@ -1224,7 +1229,7 @@
           <Path path="76" as="77" />
         </Paths>
       </Formula>
-      <Formula id="n64CwOjHYkWBTrtP8rczbQ" name="GallbladderEmptyingRate" dim="Amount per time" formula="EHC_Active ? ln(2) / EHC_Halftime * M * EHC_EjectionFraction : 0">
+      <Formula id="8REfIz2g-0eMTXGxes6Eow" name="GallbladderEmptyingRate" dim="Amount per time" formula="EHC_Active ? ln(2) / EHC_Halftime * M * EHC_EjectionFraction : 0">
         <Paths>
           <Path path="78" as="79" dim="7" />
           <Path path="80" as="81" dim="54" />
@@ -1232,129 +1237,129 @@
           <Path path="85" as="86" />
         </Paths>
       </Formula>
-      <Formula id="o_0nY2qur0e-8DwHcA8FtQ" name="MassTransferArterialCordBlood2PlacentaPl" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="seJlullP-0CJ3r1LiAm9sw" name="MassTransferArterialCordBlood2PlacentaPl" dim="Amount per time" formula="Q*(1-Fetal_HCT)*C_pls">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="87" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="c8ht43DVhEGYwEZmaxbgQA" name="MassTransferArterialCordBlood2PlacentaRBC" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="kVW6J3ql5kKUM7gw-gRXdw" name="MassTransferArterialCordBlood2PlacentaRBC" dim="Amount per time" formula="Q*Fetal_HCT*C_bc">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="87" as="29" dim="17" />
           <Path path="18" as="19" dim="20" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="w8hcsyAFtEa2lCrZWpI1mg" name="MassTransferPlacentaPl2VeinCordBlood" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="cFwxSafqmk2rEg26gLmgrw" name="MassTransferPlacentaPl2VeinCordBlood" dim="Amount per time" formula="Q*(1-Fetal_HCT)*C_pls">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="87" as="29" dim="17" />
           <Path path="18" as="27" dim="20" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="rhQXmEphgEqQgjckurh_aQ" name="MassTransferPlacentaRBC2VeinCordBlood" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="TLHo5qxI0kKH4E_BdEkunw" name="MassTransferPlacentaRBC2VeinCordBlood" dim="Amount per time" formula="Q*Fetal_HCT*C_bc">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="18" as="19" dim="20" />
           <Path path="87" as="29" dim="17" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="ifrcFzfpc0uEDSRJ8HFE0Q" name="MassTransferVeinCordBlood2FetusPl" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="rOdc7jJ0q0ivJGckXV7quQ" name="MassTransferVeinCordBlood2FetusPl" dim="Amount per time" formula="Q*(1-Fetal_HCT)*C_pls">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="18" as="27" dim="20" />
           <Path path="87" as="29" dim="17" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="jgro0IPNIUO0Rm10ypyU3w" name="MassTransferVeinCordBlood2FetusRBC" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="UjZ_5CBExk6TCISVNi32HA" name="MassTransferVeinCordBlood2FetusRBC" dim="Amount per time" formula="Q*Fetal_HCT*C_bc">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="18" as="19" dim="20" />
           <Path path="87" as="29" dim="17" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="MVAXwM4-N0mSmarHPzKiiw" name="MassTransferFetusPl2ArterialCordBlood" dim="Amount per time" formula="Q*(1-HCT)*C_pls">
+      <Formula id="K9NaUvEfBk--eBXYNuUacA" name="MassTransferFetusPl2ArterialCordBlood" dim="Amount per time" formula="Q*(1-Fetal_HCT)*C_pls">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="18" as="27" dim="20" />
           <Path path="87" as="29" dim="17" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="aDrZWQKdi065Eg9UbO-GAA" name="MassTransferFetusRBC2ArterialCordBlood" dim="Amount per time" formula="Q*HCT*C_bc">
+      <Formula id="xtZ1fOQGqUGIqXAi0cATEw" name="MassTransferFetusRBC2ArterialCordBlood" dim="Amount per time" formula="Q*Fetal_HCT*C_bc">
         <Paths>
-          <Path path="23" as="24" />
           <Path path="18" as="19" dim="20" />
           <Path path="87" as="29" dim="17" />
+          <Path path="88" as="89" />
         </Paths>
       </Formula>
-      <Formula id="4pTF0kMBUkOebgPbnoWSUw" name="PassiveDiffusionPlacentaBarrier" dim="Amount per time" formula="P*SA*C_pls*fu - P* SA* fu * C_cell/K_cell_pls">
+      <Formula id="fBvtua2P4EimdZ1FB0BGiw" name="PassiveDiffusionPlacentaBarrier" dim="Amount per time" formula="P*SA*C_pls*fu - P* SA* fu * C_cell/K_cell_pls">
         <Paths>
           <Path path="52" as="53" dim="54" />
           <Path path="18" as="27" dim="20" />
           <Path path="41" as="42" dim="20" />
-          <Path path="88" as="61" dim="62" />
-          <Path path="76" as="89" />
-          <Path path="90" as="91" dim="57" />
+          <Path path="90" as="61" dim="62" />
+          <Path path="76" as="91" />
+          <Path path="92" as="93" dim="57" />
         </Paths>
       </Formula>
-      <Formula id="5LEzsCm3JkywEmcctqzxHg" name="PARAM_CL_spec_from_CL_pls_kid" dim="Inversed time" formula="fu * (Q * (1 - HCT) - CL_pls * BW)&gt;0 ? CL_pls * BW * Q * (1 - HCT) / (fu * (Q * (1 - HCT) - CL_pls * BW) * V) : 1000000">
+      <Formula id="8JaQsref7kW79csfrcy0nA" name="PARAM_CL_spec_from_CL_pls_kid" dim="Inversed time" formula="fu * (Q * (1 - HCT) - CL_pls * BW)&gt;0 ? CL_pls * BW * Q * (1 - HCT) / (fu * (Q * (1 - HCT) - CL_pls * BW) * V) : 1000000">
         <Paths>
-          <Path path="92" as="29" dim="17" />
-          <Path path="93" as="94" dim="95" />
-          <Path path="96" as="53" dim="54" />
-          <Path path="97" as="24" />
-          <Path path="98" as="99" dim="100" />
-          <Path path="101" as="102" dim="103" />
+          <Path path="94" as="29" dim="17" />
+          <Path path="95" as="96" dim="97" />
+          <Path path="98" as="53" dim="54" />
+          <Path path="99" as="24" />
+          <Path path="100" as="101" dim="102" />
+          <Path path="103" as="104" dim="105" />
         </Paths>
       </Formula>
-      <Formula id="HmNO14tRj0GLiQ7B6ING5w" name="ClearanceKidneyPls" dim="Amount per time" formula="V * CLspec * C_pls * fu">
+      <Formula id="gzp5gKQs0ES1J0nMyzuS1g" name="ClearanceKidneyPls" dim="Amount per time" formula="V * CLspec * C_pls * fu">
         <Paths>
-          <Path path="104" as="102" dim="103" />
+          <Path path="106" as="104" dim="105" />
           <Path path="18" as="27" dim="20" />
           <Path path="52" as="53" dim="54" />
-          <Path path="105" as="106" dim="12" />
+          <Path path="107" as="108" dim="12" />
         </Paths>
       </Formula>
-      <Formula id="kiHYSQTMvk6muxGAKfIpAw" name="GFR_Clearance" dim="Amount per time" formula="fu * GFRspec*GFR_Fraction* Weight_Kidney * C_kid_pls">
+      <Formula id="A-bYinvxR0qedGvW9GaGOw" name="GFR_Clearance" dim="Amount per time" formula="fu * GFRspec*GFR_Fraction* Weight_Kidney * C_kid_pls">
         <Paths>
-          <Path path="107" as="108" dim="109" />
-          <Path path="110" as="111" dim="95" />
-          <Path path="18" as="112" dim="20" />
+          <Path path="109" as="110" dim="111" />
+          <Path path="112" as="113" dim="97" />
+          <Path path="18" as="114" dim="20" />
           <Path path="52" as="53" dim="54" />
-          <Path path="113" as="114" dim="54" />
+          <Path path="115" as="116" dim="54" />
         </Paths>
       </Formula>
-      <Formula id="DL07Q9OO3EWiKAG9fCIjTQ" name="PARAM_TSspec_From_TS" dim="Inversed time" formula="TS/V_kid">
+      <Formula id="FQr2pEZz1E6X23QKV8zhLQ" name="PARAM_TSspec_From_TS" dim="Inversed time" formula="TS/V_kid">
         <Paths>
-          <Path path="101" as="115" dim="103" />
-          <Path path="116" as="117" dim="17" />
+          <Path path="103" as="117" dim="105" />
+          <Path path="118" as="119" dim="17" />
         </Paths>
       </Formula>
-      <Formula id="CFWhdQ5aOEChmhzhO6friQ" name="TubularSecretion_FirstOrder" dim="Amount per time" formula="fu * TSspec * V_kid * C_kid_pls">
+      <Formula id="Cv12lpQlJkGW48hWgL49XA" name="TubularSecretion_FirstOrder" dim="Amount per time" formula="fu * TSspec * V_kid * C_kid_pls">
         <Paths>
-          <Path path="118" as="115" dim="103" />
-          <Path path="18" as="112" dim="20" />
+          <Path path="120" as="117" dim="105" />
+          <Path path="18" as="114" dim="20" />
           <Path path="52" as="53" dim="54" />
-          <Path path="119" as="119" dim="12" />
+          <Path path="121" as="121" dim="12" />
         </Paths>
       </Formula>
-      <Formula id="LRfW2DGBYEmgAm5wfFkTVQ" name="PARAM_TSMax_spec_From_TSMax" dim="Concentration (molar) per time" formula="TSMax / V_kid">
+      <Formula id="m2hTlNc75Ey9Co-xDfayEw" name="PARAM_TSMax_spec_From_TSMax" dim="Concentration (molar) per time" formula="TSMax / V_kid">
         <Paths>
-          <Path path="120" as="121" dim="2" />
-          <Path path="101" as="115" dim="103" />
+          <Path path="122" as="123" dim="2" />
+          <Path path="103" as="117" dim="105" />
         </Paths>
       </Formula>
-      <Formula id="Ifq2lbud_0GeWD3CS2OpJQ" name="TubularSecretion_MM" dim="Amount per time" formula="fu * TSmax_spec * V_kid * C_kid_pls / (Km + fu * C_kid_pls)">
+      <Formula id="l-b3FbIwrkuiUA_MU2UuyQ" name="TubularSecretion_MM" dim="Amount per time" formula="fu * TSmax_spec * V_kid * C_kid_pls / (Km + fu * C_kid_pls)">
         <Paths>
-          <Path path="104" as="115" dim="103" />
-          <Path path="18" as="112" dim="20" />
+          <Path path="106" as="117" dim="105" />
+          <Path path="18" as="114" dim="20" />
           <Path path="52" as="53" dim="54" />
-          <Path path="122" as="122" dim="20" />
-          <Path path="123" as="123" dim="124" />
+          <Path path="124" as="124" dim="20" />
+          <Path path="125" as="125" dim="126" />
         </Paths>
       </Formula>
-      <Formula id="1VDefwua_UOloDLcRf6X_Q" name="PassiveDiffusionInt2CellFetus" dim="Amount per time" formula="K_water_int * PA_int_cell * C_int - K_water_cell * PA_cell_int * C_cell">
+      <Formula id="7X6LwG6Mukm01X26ftenvQ" name="PassiveDiffusionInt2CellFetus" dim="Amount per time" formula="K_water_int * PA_int_cell * C_int - K_water_cell * PA_cell_int * C_cell">
         <Paths>
           <Path path="41" as="42" dim="20" />
           <Path path="18" as="43" dim="20" />
@@ -1364,10 +1369,10 @@
           <Path path="50" as="51" />
         </Paths>
       </Formula>
-      <Formula id="6cZ05Ahuw02GmG8AfTPQjw" name="MassTransferPlacentaF2BloodPool" dim="Amount per time" formula="Q*(1-HCT_fetus)*C_pls">
+      <Formula id="KOhKuQnVq0qzATu25qNuHw" name="MassTransferPlacentaF2BloodPool" dim="Amount per time" formula="Q*(1-HCT_fetus)*C_pls">
         <Paths>
           <Path path="87" as="29" dim="17" />
-          <Path path="125" as="126" />
+          <Path path="88" as="127" />
           <Path path="18" as="27" dim="20" />
         </Paths>
       </Formula>
@@ -1461,45 +1466,46 @@
       <Map s="Organism|Gallbladder|Gallbladder emptying active" id="85" />
       <Map s="EHC_Active" id="86" />
       <Map s="Organism|PlacentaFetal|Blood flow rate" id="87" />
-      <Map s="Neighborhoods|PlacentaMaternal_pls_PlacentaFetal_cell|Surface area (plasma/cell)" id="88" />
-      <Map s="K_cell_pls" id="89" />
-      <Map s="MOLECULE|Permeability" id="90" />
-      <Map s="P" id="91" />
-      <Map s="..|Blood flow rate (kidney)" id="92" />
-      <Map s="..|Body weight" id="93" />
-      <Map s="BW" id="94" />
-      <Map s="Mass" id="95" />
-      <Map s="..|Fraction unbound (experiment)" id="96" />
-      <Map s="..|Hematocrit" id="97" />
-      <Map s="..|Plasma clearance" id="98" />
-      <Map s="CL_pls" id="99" />
-      <Map s="Flow per weight" id="100" />
-      <Map s="..|Volume (kidney)" id="101" />
-      <Map s="V" id="102" />
-      <Map s="Volume" id="103" />
-      <Map s="SOURCE|..|Volume" id="104" />
-      <Map s="Specific clearance" id="105" />
-      <Map s="CLspec" id="106" />
-      <Map s="SOURCE|..|GFR (specific)" id="107" />
-      <Map s="GFRspec" id="108" />
-      <Map s="Flow per weight organ" id="109" />
-      <Map s="SOURCE|..|Weight (tissue)" id="110" />
-      <Map s="Weight_Kidney" id="111" />
-      <Map s="C_kid_pls" id="112" />
-      <Map s="GFR fraction" id="113" />
-      <Map s="GFR_Fraction" id="114" />
-      <Map s="V_kid" id="115" />
-      <Map s="..|Tubular secretion" id="116" />
-      <Map s="TS" id="117" />
-      <Map s="Organism|Kidney|Volume" id="118" />
-      <Map s="TSspec" id="119" />
-      <Map s="..|TSmax" id="120" />
-      <Map s="TSMax" id="121" />
-      <Map s="Km" id="122" />
-      <Map s="TSmax_spec" id="123" />
-      <Map s="Concentration (molar) per time" id="124" />
-      <Map s="Organism|Fetus|Fetal Hematocrit" id="125" />
-      <Map s="HCT_fetus" id="126" />
+      <Map s="Organism|Fetus|Fetal Hematocrit" id="88" />
+      <Map s="Fetal_HCT" id="89" />
+      <Map s="Neighborhoods|PlacentaMaternal_pls_PlacentaFetal_cell|Surface area (plasma/cell)" id="90" />
+      <Map s="K_cell_pls" id="91" />
+      <Map s="MOLECULE|Permeability" id="92" />
+      <Map s="P" id="93" />
+      <Map s="..|Blood flow rate (kidney)" id="94" />
+      <Map s="..|Body weight" id="95" />
+      <Map s="BW" id="96" />
+      <Map s="Mass" id="97" />
+      <Map s="..|Fraction unbound (experiment)" id="98" />
+      <Map s="..|Hematocrit" id="99" />
+      <Map s="..|Plasma clearance" id="100" />
+      <Map s="CL_pls" id="101" />
+      <Map s="Flow per weight" id="102" />
+      <Map s="..|Volume (kidney)" id="103" />
+      <Map s="V" id="104" />
+      <Map s="Volume" id="105" />
+      <Map s="SOURCE|..|Volume" id="106" />
+      <Map s="Specific clearance" id="107" />
+      <Map s="CLspec" id="108" />
+      <Map s="SOURCE|..|GFR (specific)" id="109" />
+      <Map s="GFRspec" id="110" />
+      <Map s="Flow per weight organ" id="111" />
+      <Map s="SOURCE|..|Weight (tissue)" id="112" />
+      <Map s="Weight_Kidney" id="113" />
+      <Map s="C_kid_pls" id="114" />
+      <Map s="GFR fraction" id="115" />
+      <Map s="GFR_Fraction" id="116" />
+      <Map s="V_kid" id="117" />
+      <Map s="..|Tubular secretion" id="118" />
+      <Map s="TS" id="119" />
+      <Map s="Organism|Kidney|Volume" id="120" />
+      <Map s="TSspec" id="121" />
+      <Map s="..|TSmax" id="122" />
+      <Map s="TSMax" id="123" />
+      <Map s="Km" id="124" />
+      <Map s="TSmax_spec" id="125" />
+      <Map s="Concentration (molar) per time" id="126" />
+      <Map s="HCT_fetus" id="127" />
     </StringMap>
   </FormulaCache>
 </PassiveTransportBuildingBlock>

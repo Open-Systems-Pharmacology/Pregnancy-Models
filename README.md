@@ -25,22 +25,6 @@ The extension modules are provided in the subfolder *Modules*. Following extensi
  Evaluation of these model is described in the following publications:
   * _Acyclovir_ and _emtricitabine_ model evaluation is described in [[4](#references)]
 
-
-
-### Accounting for different unbound drug fractions in maternal and fetal compartments
-
-The `pkml` file `PassiveTransport_PregnantWoman_with-fetal-fu.pkml` (subfolder *BuildingBlocks*) is a refined building block where the drug's fraction unbound was separately implemented in the maternal and fetal organism as described in [[8](#references)]. 
-
-When setting up a pregnancy PBPK model using this building block, the fetal fraction unbound needs to be added as new parameter called `Fetal Fraction unbound (plasma, reference value)` to the drug's parameter list in the `Molecule building block` as shown below:
-
-<p align="center">
-<img src="MoleculeBB_FetalFractionUnbound.png" width="100%">
-</p>
-
-### in silico cotyledon perfusion model
-
-The *in silico* cotyledon perfusion model presented in [[9](#references)] is provided as MoBi<sup>®</sup> file (subfolder _CotyledonPerfusionModel_). Note that this model was built with MoBi<sup>®</sup> version 9.1 and is not updated with new releases of MoBi<sup>®</sup>.
-
 ## How to run pregnancy PBPK simulations
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model structure not all required data was collected). 
 

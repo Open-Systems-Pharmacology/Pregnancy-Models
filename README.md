@@ -1,10 +1,10 @@
 # Experimental module-based implementation for OSPS version 12
 
-This branch contains an experimental implementation of the pregnancy model as extension modules utilizing the modularization concept implemented in Version 12 of the OSP software. As the software is still in development, this implementation cannot be considered as a final one.
+This branch contains an experimental implementation of the pregnancy model as extension modules utilizing the modularization concept implemented in Version 12 of the OSP software.
 
 # Physiologically Based Pharmacokinetic Models for Pregnancy
 
-Within this repository, we distribute the physiologically-based whole-body models for pregnant individuals published in [[1,2,3,4,5,6,7](#references)]. Additionally, this repository contains the refined passive transports building block which was used to build pregnancy PBPK models with different unbound drug fractions in maternal and fetal organism as described in [[8](#references)] as well as the *in silico* cotyledon perfusion model presented in [[9](#references)].
+Within this repository, we distribute MoBi modules of maternal-fetal physiology for the whole-body physiologically-based (PB) models to simulate pharmacokinetics (PK) of compounds in pregnant individuals. The modules are based on the PBPK pregnancy models published in [[1,2,3,4,5,6,7](#references)]. Additionally, this repository contains the refined passive transports building block which was used to build pregnancy PBPK models with different unbound drug fractions in maternal and fetal organism as described in [[8](#references)].
 
 The pregnancy (and postpartum) PBPK model for amoxicillin published in [[10](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
 
@@ -82,7 +82,5 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 [7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
 
 [8] [Liu XI, Green DJ, van den Anker JN, Rakhmanina NY, Ahmadzia HK, Momper J, Park K, Burckart G, Dallmann A. Mechanistic Modeling of Placental Drug Transfer in Humans: How Do Differences in Maternal/Fetal Fraction of Unbound Drug and Placental Influx/Efflux Transfer Rates Affect Fetal Pharmacokinetics? *Front Pediatr.* 9, 2021: 723006. doi: 10.3389/fped.2021.723006](https://www.frontiersin.org/articles/10.3389/fped.2021.723006)
-
-[9] [Mian P, Nolan B, van den Anker JN, van Calsteren K, Allegaert K, Lakhi N, Dallmann A. Mechanistic coupling of a refined ex vivo cotyledon perfusion model and a physiologically based pharmacokinetic model to predict fetal acetaminophen pharmacokinetics at delivery. *Front Pediatr.* 9, 2021: 733520. doi: 10.3389/fped.2021.733520](https://www.frontiersin.org/articles/10.3389/fped.2021.733520)
 
 [10] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)

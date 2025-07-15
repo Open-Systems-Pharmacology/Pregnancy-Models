@@ -6,18 +6,17 @@ This branch contains an experimental implementation of the pregnancy model as ex
 
 Within this repository, we distribute MoBi modules of maternal-fetal physiology for the whole-body physiologically-based (PB) models to simulate pharmacokinetics (PK) of compounds in pregnant individuals. The modules are based on the PBPK pregnancy models published in [[1,2,3,4,5,6,7](#references)]. Additionally, this repository contains the refined passive transports building block which was used to build pregnancy PBPK models with different unbound drug fractions in maternal and fetal organism as described in [[8](#references)].
 
-The pregnancy (and postpartum) PBPK model for amoxicillin published in [[10](#references)] can be found [here](https://github.com/Open-Systems-Pharmacology/Amoxicillin-Model).
-
 The pregnancy model structure comprises per default 27 compartments, including nine pregnancy-specific compartments as shown in the schema below.
 <p align="center">
 <img src="ModelStructure.png" width="50%">
 </p>
 
-
 ## Repository files
 ### Whole-body PBPK models
 
-The pregnancy PBPK models published in [[1,2,3,4,5,6,7](#references)] are provided as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_). Evaluation of these model is described in the following publications:
+This repository provides the implementation of published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The origingal simulations described in the publichations were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_).
+
+ Evaluation of these model is described in the following publications:
   * _Cefazolin_, _cefuroxime_ and _cefradine_ model evaluation is described in [[2](#references)]
   * _Caffeine_, _midazolam_, _nifedipine_, _metoprolol_, _ondansetron_, _granisetron_, _diazepam_ and _metronidazole_ model evaluation is described in [[3](#references)]
   * _Acyclovir_ and _emtricitabine_ model evaluation is described in [[4](#references)]
@@ -82,5 +81,3 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 [7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
 
 [8] [Liu XI, Green DJ, van den Anker JN, Rakhmanina NY, Ahmadzia HK, Momper J, Park K, Burckart G, Dallmann A. Mechanistic Modeling of Placental Drug Transfer in Humans: How Do Differences in Maternal/Fetal Fraction of Unbound Drug and Placental Influx/Efflux Transfer Rates Affect Fetal Pharmacokinetics? *Front Pediatr.* 9, 2021: 723006. doi: 10.3389/fped.2021.723006](https://www.frontiersin.org/articles/10.3389/fped.2021.723006)
-
-[10] [Dallmann A, Himstedt A, Solodenko J, Ince I, Hempel G, Eissing T. Integration of physiological changes during the postpartum period into a PBPK framework and prediction of amoxicillin disposition before and shortly after delivery. *J Pharmacokinet Pharmacodyn.* 47(4), 2020: 341-359. doi: 10.1007/s10928-020-09706-z](https://pubmed.ncbi.nlm.nih.gov/32748112/)

@@ -12,18 +12,20 @@ The pregnancy model structure comprises per default 27 compartments, including n
 </p>
 
 ## Repository files
-### Whole-body PBPK models
+### Pregnancy PBPK exntesion modules
 
-This repository provides the implementation of published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The origingal simulations described in the publichations were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_).
+This repository provides the implementation of published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The origingal simulations described in the publichations were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_).
+
+The extension modules are provided in the subfolder *Modules*. Following extension modules are available:
+
+* **Maternal Structure (incl. fetal placenta and placental transfer)**: SHORT DESCRIPTION with reference to the source where the model was described first
+* **Simple Fetal Structure (Dallmann)**: SHORT DESCRIPTION with reference to the source where the model was described first
+* **Complex Fetal structure**: SHORT DESCRIPTION with reference to the source where the model was described first
 
  Evaluation of these model is described in the following publications:
-  * _Cefazolin_, _cefuroxime_ and _cefradine_ model evaluation is described in [[2](#references)]
-  * _Caffeine_, _midazolam_, _nifedipine_, _metoprolol_, _ondansetron_, _granisetron_, _diazepam_ and _metronidazole_ model evaluation is described in [[3](#references)]
   * _Acyclovir_ and _emtricitabine_ model evaluation is described in [[4](#references)]
-  * _Dolutegravir_ and _raltegravir_ model evaluation is described in [[5](#references)]
-  * _Acetaminophen_ model evaluation is described in [[6,7,9](#references)]
 
-The subfolder *Moduels* contains the MoBi<sup>®</sup> enxtension modules that can be used with PBPK models created in PK-Sim<sup>®</sup> version 12.
+
 
 ### Accounting for different unbound drug fractions in maternal and fetal compartments
 

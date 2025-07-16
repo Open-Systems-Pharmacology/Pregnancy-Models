@@ -1,0 +1,51 @@
+title: ESQlabs report template
+author: ESQlabs
+version: 0.0.1
+quarto-required: ">=1.4"
+contributes:
+  formats:
+    common:
+      date: today
+      date-format: long
+      # table of content options
+      toc: true
+      toc-depth: 3
+      toc-location: left
+      number-sections: true
+      # figures options
+      fig-align: center
+      fig-width: 7
+      fig-format: retina
+      fig-asp: 0.618
+      # code cells options
+      highlight-style: github
+      # execution options
+      execute:
+        - echo: false
+        - warning: false
+        - message: false
+        - freeze: auto
+      knitr:
+        opts_chunk:
+          out.width: "95%"
+          fig.showtext: true
+          fig.align: "center"
+          echo: true
+      self-contained: true
+    html:
+      page-layout: full
+      theme:
+        - esqlabs.css
+      # figures options
+      fig-responsive: true
+      # table options
+      df-print: paged
+      filters:
+         - lightbox
+      # lightbox: auto
+    docx:
+    typst:
+      papersize: a4
+
+      
+

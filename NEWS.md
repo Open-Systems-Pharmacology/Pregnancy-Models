@@ -1,5 +1,8 @@
 # Pregnancy module v12 (development version)
 
+- Add {esqlabsR} project for validation report using the Aciclovir model
+- Add validation report for Aciclovir
+
 - Add MoBi extension module "Maternal Structure (incl. fetal placenta and placental transfer)"
 - Add MoBi extension module "Simple Fetal Structure (Dallmann)"
 - Add MoBi extension module "Complex Fetal structure"

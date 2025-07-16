@@ -12,7 +12,14 @@ The pregnancy model structure comprises per default 27 compartments, including n
 </p>
 
 ## Repository files
-### Pregnancy PBPK exntesion modules
+
+## PBPK model snapshots
+
+PK-Sim snapshots and MoBi modeuls used for the validation of the modules.
+
+- **Aciclovir-Model**: Aciclovir model based on the model used in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0).
+
+### Pregnancy PBPK extension modules
 
 This repository provides the implementation of published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The origingal simulations described in the publichations were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_).
 
@@ -22,22 +29,47 @@ The extension modules are provided in the subfolder *Modules*. Following extensi
 * **Simple Fetal Structure (Dallmann)**: SHORT DESCRIPTION with reference to the source where the model was described first
 * **Complex Fetal structure**: SHORT DESCRIPTION with reference to the source where the model was described first
 
- Evaluation of these model is described in the following publications:
-  * _Acyclovir_ and _emtricitabine_ model evaluation is described in [[4](#references)]
+### Model evaluation reports
+
+The subfolder _Validation reports_ contains evaluation reports and the [{esqlabsR}](https://esqlabs.github.io/esqlabsR/) project to generate the reports.
+
+Currently, the modules have been evaluated with the aciclovir example published in [[4](#references)].
 
 ## How to run pregnancy PBPK simulations
 Currently, simulations based on pregnant individuals cannot be built up directly in PK-Sim<sup>®</sup> (due to the fact that e.g. for the protein model structure not all required data was collected). 
 
 ### How to combine an existing (MoBi<sup>®</sup>) pregnancy model with a pregnancy population created in PK-Sim<sup>®</sup>
-Steps 3 to 5 are performed in PK-Sim<sup>®</sup>.
-1. If a (MoBi<sup>®</sup>) pregnancy model is available in `pkml` format, go to the step 3
-2. If a (MoBi<sup>®</sup>) pregnancy model is available in `mbp3` format (MoBi<sup>®</sup> project): open it in MoBi<sup>®</sup>, select simulation of interest and save it in `pkml` format
-3. Create an individual using the population `Pregnant (Dallmann et al. 2017)`
 
-   _Please note that in PK-Sim<sup>®</sup>, the fertilization age (FA) is defined via the individual’s age, with 30 years corresponding to a FA of 0 weeks (i.e. just prior to conception). Hence, a pregnant woman with a FA of 38 weeks is defined using an age of 30.75 years._
+This section describes the workflow for combination of a PBPK model developed in PK-Sim with the pregnancy module on the example of the Acyclovir model.
 
-4. Create a pregnancy population with the required settings based on the individual above
-5. Import (MoBi<sup>®</sup>) pregnancy model in `pkml` format and combine it with created population building block as described in the [OSP Suite manual](https://github.com/Open-Systems-Pharmacology/OSPSuite.Documentation/blob/master/Open%20Systems%20Pharmacology%20Suite.pdf) (**Ch. 21.2 Importing Individual and Population Simulation**)
+#### In PK-Sim<sup>®</sup>:
+
+1. Create a simulation using the Administration Protocol that should be simulated with the pregnancy model. The used Individual must not necessarily be from a Pregnancy Population.
+   1. In the example, the simulation `po 400mg 3xdaily 3 weeks` from the snapshot `Models/Acyclovir-Model.json` is used.
+2. Send the simulation to MoBi.
+
+#### In (MoBi<sup>®</sup>):
+
+The pregnancy extension requires two extension modules:
+
+* Maternal module, including maternal organs, the maternal and fetal sides of the placenta, and passive transport for placental transfer
+* Fetal module including umbilical cord, fetal blood, and fetal compartment. This repository provides two versions of a fetal module.
+
+4. Right-click on ‘Modules’ and then navigate to ‘Load Module...’ and select `Maternal Structure (incl. fetal placenta and placental transfer).pkml`.
+5. Right-click on ‘Modules’ and then navigate to ‘Load Module...’ and select `Simple Fetal Structure (Dallmann).pkml`.
+6. **Add Initial Conditions to the Maternal Module**. Right-click on the maternal extension module, select ‘Add Building Blocks..', and select "Initial Conditions". Click "OK".
+7. Open the created 'Initial Conditions' and click on the 'Extend' symbol in the upper left corner.
+8. Select the molecules that should be present in the maternal physiology structure. In the example, select "Aciclovir" only. If you also want to express proteins in the new organs, select the respective proteins.
+9. Repeat steps 6-8 for the fetal module.
+10. **Create a pregnant individual**. Create an individual using the population `Pregnant (Dallmann et al. 2017)` and set the age to 30.72 years.
+
+   _Please note that in PK-Sim<sup>®</sup>, the fertilization age (FA) is defined via the individual’s age, with 30 years corresponding to a FA of 0 weeks (i.e. just prior to conception). Hence, a pregnant woman with a FA of 38 weeks is defined using an age of 30.72 years._
+
+11. **Create a pregnant simulation.** Add the modules in the following order:
+11.1 Non-Pregnant module (imported from PK-Sim)
+11.2 Maternal Structure
+11.3 Fetal Structure
+12. Select the pregnant individual
 
 ## Version information
 The physiology is based on the PBPK model implemented in PK-Sim<sup>®</sup> version 12.0. The MoBi<sup>®</sup> project files were created in version 12.0.

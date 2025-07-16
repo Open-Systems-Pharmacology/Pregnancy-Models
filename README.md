@@ -19,7 +19,7 @@ PK-Sim snapshots and MoBi modeuls used for the validation of the modules.
 
 This repository provides the implementation of published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The origingal simulations described in the publichations were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder _Models_).
 
-The extension modules are provided in the subfolder *Modules*. Following extension modules are available:
+The extension modules are provided in the subfolder *Modules*. The following extension modules are available:
 
 * **Maternal Structure (incl. fetal placenta and placental transfer)**: SHORT DESCRIPTION with reference to the source where the model was described first
 * **Simple Fetal Structure (Dallmann)**: SHORT DESCRIPTION with reference to the source where the model was described first

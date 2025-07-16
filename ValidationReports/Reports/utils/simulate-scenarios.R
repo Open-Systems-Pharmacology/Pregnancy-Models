@@ -12,7 +12,7 @@
 #' @param stopIfParameterNotFound If `TRUE`, the execution will be terminated if 
 #' any parameter specified is not found in the simulation. The value `FALSE` should
 #' be used with caution, as if a parameter defined for the scenario is not found in the 
-#' simulataion is often a sign of a problem in scenario definition.
+#' simulation is often a sign of a problem in scenario definition.
 #' @param simulationRunOptions Object of type SimulationRunOptions that will be passed to simulation runs. If NULL, default options are used.
 #' Can be used to, e.g., disable check for negative values.
 

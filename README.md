@@ -1,7 +1,3 @@
-# Experimental module-based implementation for OSPS version 12
-
-This branch contains an experimental implementation of the pregnancy model as extension modules utilizing the modularization concept implemented in Version 12 of the OSP software.
-
 # Physiologically Based Pharmacokinetic Models for Pregnancy
 
 Within this repository, we distribute MoBi modules of maternal-fetal physiology for the whole-body physiologically-based (PB) models to simulate pharmacokinetics (PK) of compounds in pregnant individuals. The modules are based on the PBPK pregnancy models published in [[1,2,3,4,5,6,7](#references)]. Additionally, this repository contains the refined passive transports building block which was used to build pregnancy PBPK models with different unbound drug fractions in maternal and fetal organism as described in [[8](#references)].

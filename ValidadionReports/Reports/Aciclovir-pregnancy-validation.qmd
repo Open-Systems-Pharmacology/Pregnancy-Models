@@ -134,8 +134,6 @@ DESCRIBE RESULTS IN 1-2 SENTENCES
 #| label: fig-Aciclovir-maternal-plasma
 #| fig-cap: "Simulation results of Acyclovir model in human pregnancy over multiple weeks. PK measurements present the following time points: (I) concentration after first dose, (II) steady state concentration (day 6 - 14) and (III) after delivery (>day 20)."
 
-# Example code to insert a figure.
-
 reportResults$plots$MaternalPlasma
 ```
 
@@ -143,16 +141,12 @@ reportResults$plots$MaternalPlasma
 #| label: fig-Aciclovir-maternal-plasma1
 #| fig-cap: "Simulation results of Acyclovir model in human pregnancy after first dose. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
 
-# Example code to insert a figure.
-
 reportResults$plots$MaternalPlasma1
 ```
 
 ```{r figures, include = TRUE, eval = TRUE}
 #| label: fig-Aciclovir-maternal-delivery
 #| fig-cap: "Simulation results of Acyclovir model in human pregnancy at delivery. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
-
-# Example code to insert a figure.
 
 reportResults$plots$Delivery
 ```
@@ -164,8 +158,6 @@ And population simulations:
 #| label: fig-Aciclovir-maternal-plasma_pop
 #| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy over multiple weeks. PK measurements present the following time points: (I) concentration after first dose, (II) steady state concentration (day 6 - 14) and (III) after delivery (>day 20)."
 
-# Example code to insert a figure.
-
 reportResults$plots$MaternalPlasma_pop
 ```
 
@@ -173,16 +165,12 @@ reportResults$plots$MaternalPlasma_pop
 #| label: fig-Aciclovir-maternal-plasma1_pop
 #| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy after first dose. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
 
-# Example code to insert a figure.
-
 reportResults$plots$MaternalPlasma1_pop
 ```
 
 ```{r figures, include = TRUE, eval = TRUE}
 #| label: fig-Aciclovir-maternal-delivery_pop
 #| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy at delivery. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
-
-# Example code to insert a figure.
 
 reportResults$plots$Delivery_pop
 ```

@@ -21,9 +21,12 @@ This repository provides the implementation of published pregnancy PBPK model st
 
 The extension modules are provided in the subfolder *Modules*. The following extension modules are available:
 
-* **Maternal Structure (incl. fetal placenta and placental transfer)**: SHORT DESCRIPTION with reference to the source where the model was described first
-* **Simple Fetal Structure (Dallmann)**: SHORT DESCRIPTION with reference to the source where the model was described first
-* **Complex Fetal structure**: SHORT DESCRIPTION with reference to the source where the model was described first
+* **Maternal Structure (incl. fetal placenta and placental transfer)**
+* **Simple Fetal Structure (Dallmann)**
+* **Complex Fetal structure**
+
+The maternal and fetal structure, inclusive maternal/fetal placenta and placental transfer are implemented based on [2]. The parameters capturing the gestation-specific changes in the anatomy and physiology of healthy pregnant women described in [1] were retrieved from the PK-Sim database and integrated as table variables in the pregnancy module. This parameter implementation enables a continues update of the parameters characterizing gestational changes allowing the simulation of mean predictions for long term exposure in MoBi.
+Whereas the simple fetal structure represents the fetus as one compartment, the complex fetal structure has subcompartmentalization into fetal organs. The fetal organ structure implementation is based on [9]. In contrast to [9], the complex fetal structure module does currently not include fetal absorption and distribution processes related to the amniotic fluid. 
 
 ### Model evaluation reports
 
@@ -95,3 +98,5 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 [7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
 
 [8] [Liu XI, Green DJ, van den Anker JN, Rakhmanina NY, Ahmadzia HK, Momper J, Park K, Burckart G, Dallmann A. Mechanistic Modeling of Placental Drug Transfer in Humans: How Do Differences in Maternal/Fetal Fraction of Unbound Drug and Placental Influx/Efflux Transfer Rates Affect Fetal Pharmacokinetics? *Front Pediatr.* 9, 2021: 723006. doi: 10.3389/fped.2021.723006](https://www.frontiersin.org/articles/10.3389/fped.2021.723006)
+
+[9] [Liu, Xiaomei I., et al. "Development of a Generic Fetal Physiologically Based Pharmacokinetic Model and Prediction of Human Maternal and Fetal Organ Concentrations of Cefuroxime." Clinical pharmacokinetics 63.1 (2024): 69-78] (https://link.springer.com/article/10.1007/s40262-023-01323-6)

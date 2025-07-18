@@ -60,25 +60,27 @@ source("Aciclovir-pregnancy-validation.R")
 # in the report. When re-using, remember to re-name the chunk as every chunk must have a unique name.
 
 # Define the scenarios to execute, the sheets to load data from, and the plots to generate in this run
-scenarioNames <- list("po 400mg 3xdaily 3 weeks pregnant",
-                      "po 400mg 3xdaily 3 weeks pregnant pop")
+scenarioNames <- list(
+  "po 400mg 3xdaily 3 weeks pregnant"
+  #"po 400mg 3xdaily 3 weeks pregnant pop"
+)
 dataSheets <- c("Human")
 plotGridNames <- c(
-   "MaternalPlasma",
- "MaternalPlasma1",
- "Delivery",
- "MaternalPlasma_pop",
-  "MaternalPlasma1_pop",
-  "Delivery_pop"
+  "MaternalPlasma",
+  "MaternalPlasma1",
+  "Delivery"
+  # "MaternalPlasma_pop",
+  #  "MaternalPlasma1_pop",
+  #  "Delivery_pop"
 )
-# Additional `DataSet` object can be passed to be used for the creation of the figures. A typical use 
+# Additional `DataSet` object can be passed to be used for the creation of the figures. A typical use
 # case would be reading data sets from pkml using the `esqlabsR::loadObservedDataFromPKML()` function.
 dataSets <- list()
 
 # Optionally, define custom parameters to be used in the simulation.
 # Must be A list containing vectors 'paths' with the full paths to the parameters,
 # 'values' the values of the parameters, and 'units' with the units the values are in.
-customParams = NULL
+customParams <- NULL
 
 # Adjust simulation run options, if necessary.
 # E.g. disable check for negative values if required
@@ -118,17 +120,28 @@ if (params$loadPreSimulatedResults) {
 
 \newpage
 
-# Introduction 
+# Introduction
 
 This report presents the validation of the human pregnancy module using Aciclovir simulations. The module is designed to simulate the pharmacokinetics of drugs during pregnancy, taking into account physiological changes that occur during this period.
 
 # Data
 
-LIST THE STUDIES/DATA USED TO VALIDATE
+Data from the following studies has been used for model validation:
+
+|   | Frenkel 1991 [1] | Kimberlin 1998 [2] | Leung 2009 [3] |
+|----|----|----|----|
+| Dose | 400 mg | \(I\) 200 mg (II) 400 mg | 400 mg |
+| Frequency | 3 times daily | 3 times daily | 3 times daily |
+| Route of administration | Oral | Oral | Oral |
+| N | 15 | 20 | 27 |
+| Duration | Until delivery | Until delivery | Until delivery |
+| Gestational age at start of treatment | 38 weeks | 36 weeks | 36 weeks |
+| Measurement | Maternal Plasma | Maternal Plasma | Maternal plasma, Umbilical cord blood |
+|  |  |  |  |
 
 # Results
 
-DESCRIBE RESULTS IN 1-2 SENTENCES
+Comparison of individual simulations with observed data are presented in the following figures.
 
 ```{r figures, include = TRUE, eval = TRUE}
 #| label: fig-Aciclovir-maternal-plasma
@@ -151,26 +164,10 @@ reportResults$plots$MaternalPlasma1
 reportResults$plots$Delivery
 ```
 
+# References
 
-And population simulations:
+[1] Frenkel, Lisa M., et al. "Pharmacokinetics of acyclovir in the term human pregnancy and neonate." American journal of obstetrics and gynecology 164.2 (1991): 569-576.
 
-```{r figures, include = TRUE, eval = TRUE}
-#| label: fig-Aciclovir-maternal-plasma_pop
-#| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy over multiple weeks. PK measurements present the following time points: (I) concentration after first dose, (II) steady state concentration (day 6 - 14) and (III) after delivery (>day 20)."
+[2] Kimberlin, Debora F, Stephen Weller, Richard J Whitley, William W Andrews, John C Hauth, Fred Lakeman, and Gerri Miller. 1998. “Pharmacokinetics of Oral Valacyclovir and Acyclovir in Late Pregnancy.” American Journal of Obstetrics and Gynecology 179 (4): 846–51.
 
-reportResults$plots$MaternalPlasma_pop
-```
-
-```{r figures, include = TRUE, eval = TRUE}
-#| label: fig-Aciclovir-maternal-plasma1_pop
-#| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy after first dose. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
-
-reportResults$plots$MaternalPlasma1_pop
-```
-
-```{r figures, include = TRUE, eval = TRUE}
-#| label: fig-Aciclovir-maternal-delivery_pop
-#| fig-cap: "Results of population simulation of Acyclovir model in human pregnancy at delivery. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
-
-reportResults$plots$Delivery_pop
-```
+[3] Leung, Daniel T., Paul A. Henning, Emily C. Wagner, Audrey Blasig, Anna Wald, Stephen L. Sacks, Lawrence Corey, and Deborah M. Money. 2009. “Inadequacy of Plasma Acyclovir Levels at Delivery in Patients With Genital Herpes Receiving Oral Acyclovir Suppressive Therapy in Late Pregnancy.” Journal of Obstetrics and Gynaecology Canada 31 (12): 1137–43.

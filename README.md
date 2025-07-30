@@ -10,6 +10,8 @@ The pregnancy model structure comprises 27 compartments by default, including ni
 
 </p>
 
+There are two fetal modules availabl: (I) "simple fetal structure", presenting the fetus as one compartment and (II) "complex fetal structure" with a fetal subcompartmentalization into organs.
+
 ## Repository files
 
 ## PBPK model snapshots

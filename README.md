@@ -6,7 +6,7 @@ The pregnancy model structure comprises 27 compartments by default, including ni
 
 <p align="center">
 
-<img src="ModelStructure.png" width="50%"/>
+<img src="PregnancyPBK_Structures_V2.png" width="50%"/>
 
 </p>
 

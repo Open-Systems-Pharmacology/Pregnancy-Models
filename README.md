@@ -1,6 +1,6 @@
 # Physiologically Based Pharmacokinetic Models for Pregnancy
 
-Within this repository, we distribute MoBi modules of maternal-fetal physiology for whole-body physiologically based (PB) models to simulate the pharmacokinetics (PK) of compounds in pregnant individuals. The modules are based on the PBPK pregnancy models published in [[1,2,3,4,5,6,7](#references)].
+Within this repository, we distribute MoBi modules of maternal-fetal physiology for whole-body physiologically based (PB) models to simulate the pharmacokinetics (PK) of compounds in pregnant individuals. The modules are based on the PBPK pregnancy models published in \[[1,2,3,4,5,6,7](#references)\].
 
 The pregnancy model structure comprises 27 compartments by default, including nine pregnancy-specific compartments, as shown in the schema below.
 
@@ -10,35 +10,35 @@ The pregnancy model structure comprises 27 compartments by default, including ni
 
 </p>
 
-There are two fetal modules availabl: (I) "simple fetal structure", presenting the fetus as one compartment and (II) "complex fetal structure" with a fetal subcompartmentalization into organs.
+Two fetal modules are available: (I) a "simple fetal structure", representing the fetus as one compartment, and (II) a "complex fetal structure" with a fetal subcompartmentalization into organs.
 
 ## Repository files
 
-## PBPK model snapshots
+### PBPK model snapshots
 
 PK-Sim snapshots and MoBi modules used for the validation of the modules.
 
--   **Aciclovir-Model**: Aciclovir model based on the model used in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0).
+-   **Aciclovir-Model**: Aciclovir model based on the model used in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) of the pregnancy model.
 
 ### Pregnancy PBPK extension modules
 
-This repository provides the implementation of the published pregnancy PBPK model structure published in [[1,2,3,4,5,6,7](#references)]. The original simulations described in the publications were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder *Models*).
+This repository provides the implementation of the pregnancy PBPK model structure published in \[[1,2,3,4,5,6,7](#references)\]. The original simulations described in the publications were developed with version 9.1 of the OSP Software and are provided in the [9.1 release](https://github.com/Open-Systems-Pharmacology/Pregnancy-Models/releases/tag/v1.0) as ready-to-use MoBi<sup>®</sup> and PK-Sim<sup>®</sup> projects (subfolder *Models*).
 
 The extension modules are provided in the subfolder *Modules*. The following extension modules are available:
 
 -   **Maternal Structure (incl. fetal placenta and placental transfer)**
 -   **Simple Fetal Structure (Dallmann)**
--   **Complex Fetal structure**
+-   **Complex Fetal Structure**
 
-The maternal and fetal structure, including the maternal/fetal placenta and placental transfer, is implemented based on [[2](#references)]. The parameters capturing the gestation-specific changes in the anatomy and physiology of healthy pregnant women described in [[1](#references)] were retrieved from the PK-Sim database and integrated as table variables in the pregnancy module. This parameter implementation enables a continuous update of the parameters characterizing gestational changes, allowing the simulation of mean predictions for long-term exposure in MoBi.
+The maternal and fetal structure, including the maternal/fetal placenta and placental transfer, is implemented based on \[[2](#references)\]. The parameters capturing the gestation-specific changes in the anatomy and physiology of healthy pregnant women described in \[[1](#references)\] were retrieved from the PK-Sim database and integrated as table variables in the pregnancy module. This parameter implementation enables a continuous update of the parameters characterizing gestational changes, allowing the simulation of mean predictions for long-term exposure in MoBi.
 
-Whereas the simple fetal structure represents the fetus as one compartment, the complex fetal structure has subcompartmentalization into fetal organs. The implementation of the fetal organ structure is based on [[9](#references)]. In contrast to [[9](#references)], the complex fetal structure module currently does not include fetal absorption and distribution processes related to the amniotic fluid.
+Whereas the simple fetal structure represents the fetus as one compartment, the complex fetal structure has subcompartmentalization into fetal organs. The implementation of the fetal organ structure is based on \[[9](#references)\]. In contrast to \[[9](#references)\], the complex fetal structure module currently does not include fetal absorption and distribution processes related to the amniotic fluid.
 
 ### Model evaluation reports
 
 The subfolder *Validation reports* contains evaluation reports and the [{esqlabsR}](https://esqlabs.github.io/esqlabsR/) project to generate the reports.
 
-The modules have been evaluated with the aciclovir example published in [[4](#references)].
+The modules have been evaluated with the aciclovir example published in \[[4](#references)\].
 
 ## How to run pregnancy PBPK simulations
 
@@ -92,20 +92,20 @@ The model code is distributed under the [GPLv2 License](https://github.com/Open-
 
 ## References {#references}
 
-[1] [Dallmann A, Ince I, Meyer M, Willmann S, Eissing T, Hempel G. Gestation-Specific Changes in the Anatomy and Physiology of Healthy Pregnant Women: An Extended Repository of Model Parameters for Physiologically Based Pharmacokinetic Modeling in Pregnancy. *Clin Pharmacokinet.* 56(11), 2017: 1303-1330. doi: 10.1007/s40262-017-0539-z](https://pubmed.ncbi.nlm.nih.gov/28401479/)
+\[1\] [Dallmann A, Ince I, Meyer M, Willmann S, Eissing T, Hempel G. Gestation-Specific Changes in the Anatomy and Physiology of Healthy Pregnant Women: An Extended Repository of Model Parameters for Physiologically Based Pharmacokinetic Modeling in Pregnancy. *Clin Pharmacokinet.* 56(11), 2017: 1303-1330. doi: 10.1007/s40262-017-0539-z](https://pubmed.ncbi.nlm.nih.gov/28401479/)
 
-[2] [Dallmann A, Ince I, Solodenko J, Meyer M, Willmann S, Eissing T, Hempel G. Physiologically Based Pharmacokinetic Modeling of Renally Cleared Drugs in Pregnant Women. *Clin Pharmacokinet.* 56(12), 2017: 1525-1541. doi: 10.1007/s40262-017-0538-0](https://www.ncbi.nlm.nih.gov/pubmed/28391404/)
+\[2\] [Dallmann A, Ince I, Solodenko J, Meyer M, Willmann S, Eissing T, Hempel G. Physiologically Based Pharmacokinetic Modeling of Renally Cleared Drugs in Pregnant Women. *Clin Pharmacokinet.* 56(12), 2017: 1525-1541. doi: 10.1007/s40262-017-0538-0](https://www.ncbi.nlm.nih.gov/pubmed/28391404/)
 
-[3] [Dallmann A, Ince I, Coboeken K, Eissing T, Hempel G. A Physiologically Based Pharmacokinetic Model for Pregnant Women to Predict the Pharmacokinetics of Drugs Metabolized Via Several Enzymatic Pathways. *Clin Pharmacokinet.* 57(6), 2018: 749-768. doi: 10.1007/s40262-017-0594-5](https://www.ncbi.nlm.nih.gov/pubmed/28924743/)
+\[3\] [Dallmann A, Ince I, Coboeken K, Eissing T, Hempel G. A Physiologically Based Pharmacokinetic Model for Pregnant Women to Predict the Pharmacokinetics of Drugs Metabolized Via Several Enzymatic Pathways. *Clin Pharmacokinet.* 57(6), 2018: 749-768. doi: 10.1007/s40262-017-0594-5](https://www.ncbi.nlm.nih.gov/pubmed/28924743/)
 
-[4] [Liu XI, Momper JD, Rakhmanina N, van den Anker JN, Green DJ, Burckart GJ, Best BM, Mirochnick M, Capparelli EV, Dallmann A. Physiologically based pharmacokinetic models to predict maternal pharmacokinetics and fetal exposure to emtricitabine and acyclovir. *J Clin Pharmacol.* 60(2), 2020: 240-255. doi: 10.1002/jcph.1515](https://pubmed.ncbi.nlm.nih.gov/31489678/)
+\[4\] [Liu XI, Momper JD, Rakhmanina N, van den Anker JN, Green DJ, Burckart GJ, Best BM, Mirochnick M, Capparelli EV, Dallmann A. Physiologically based pharmacokinetic models to predict maternal pharmacokinetics and fetal exposure to emtricitabine and acyclovir. *J Clin Pharmacol.* 60(2), 2020: 240-255. doi: 10.1002/jcph.1515](https://pubmed.ncbi.nlm.nih.gov/31489678/)
 
-[5] [Liu XI, Momper JD, Rakhmanina NY, Green DJ, Burckart GJ, Cressey TR, Mirochnick M, Best BM, van den Anker JN, Dallmann A. Prediction of Maternal and Fetal Pharmacokinetics of Dolutegravir and Raltegravir Using Physiologically Based Pharmacokinetic Modeling. *Clin Pharmacokinet.* 59(11), 2020: 1433-1450. doi: 10.1007/s40262-020-00897-9](https://pubmed.ncbi.nlm.nih.gov/32451908/)
+\[5\] [Liu XI, Momper JD, Rakhmanina NY, Green DJ, Burckart GJ, Cressey TR, Mirochnick M, Best BM, van den Anker JN, Dallmann A. Prediction of Maternal and Fetal Pharmacokinetics of Dolutegravir and Raltegravir Using Physiologically Based Pharmacokinetic Modeling. *Clin Pharmacokinet.* 59(11), 2020: 1433-1450. doi: 10.1007/s40262-020-00897-9](https://pubmed.ncbi.nlm.nih.gov/32451908/)
 
-[6] [Mian P, van den Anker JN, van Calsteren K, Annaert P, Tibboel D, Pfister M, Allegaert K, Dallmann A. Physiologically Based Pharmacokinetic Modeling to Characterize Acetaminophen Pharmacokinetics and N-Acetyl-p-Benzoquinone Imine (NAPQI) Formation in Non-Pregnant and Pregnant Women. *Clin Pharmacokinet.* 59(1), 2020: 97-110. doi: 10.1007/s40262-019-00799-5](https://pubmed.ncbi.nlm.nih.gov/31347013/)
+\[6\] [Mian P, van den Anker JN, van Calsteren K, Annaert P, Tibboel D, Pfister M, Allegaert K, Dallmann A. Physiologically Based Pharmacokinetic Modeling to Characterize Acetaminophen Pharmacokinetics and N-Acetyl-p-Benzoquinone Imine (NAPQI) Formation in Non-Pregnant and Pregnant Women. *Clin Pharmacokinet.* 59(1), 2020: 97-110. doi: 10.1007/s40262-019-00799-5](https://pubmed.ncbi.nlm.nih.gov/31347013/)
 
-[7] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
+\[7\] [Mian P, Allegaert K, Conings S, Annaert P, Tibboel D, Pfister M, van Calsteren K, van den Anker JN, Dallmann A. Integration of Placental Transfer in a Fetal–Maternal Physiologically Based Pharmacokinetic Model to Characterize Acetaminophen Exposure and Metabolic Clearance in the Fetus. *Clin Pharmacokinet.* 59(7), 2020: 911-925. doi: 10.1007/s40262-020-00861-7](https://pubmed.ncbi.nlm.nih.gov/32052378/)
 
-[8] [Liu XI, Green DJ, van den Anker JN, Rakhmanina NY, Ahmadzia HK, Momper J, Park K, Burckart G, Dallmann A. Mechanistic Modeling of Placental Drug Transfer in Humans: How Do Differences in Maternal/Fetal Fraction of Unbound Drug and Placental Influx/Efflux Transfer Rates Affect Fetal Pharmacokinetics? *Front Pediatr.* 9, 2021: 723006. doi: 10.3389/fped.2021.723006](https://www.frontiersin.org/articles/10.3389/fped.2021.723006)
+\[8\] [Liu XI, Green DJ, van den Anker JN, Rakhmanina NY, Ahmadzia HK, Momper J, Park K, Burckart G, Dallmann A. Mechanistic Modeling of Placental Drug Transfer in Humans: How Do Differences in Maternal/Fetal Fraction of Unbound Drug and Placental Influx/Efflux Transfer Rates Affect Fetal Pharmacokinetics? *Front Pediatr.* 9, 2021: 723006. doi: 10.3389/fped.2021.723006](https://www.frontiersin.org/articles/10.3389/fped.2021.723006)
 
-[9] [Liu, Xiaomei I., et al. "Development of a Generic Fetal Physiologically Based Pharmacokinetic Model and Prediction of Human Maternal and Fetal Organ Concentrations of Cefuroxime." Clinical pharmacokinetics 63.1 (2024): 69-78](https://link.springer.com/article/10.1007/s40262-023-01323-6)
+\[9\] [Liu, Xiaomei I., et al. "Development of a Generic Fetal Physiologically Based Pharmacokinetic Model and Prediction of Human Maternal and Fetal Organ Concentrations of Cefuroxime." Clinical pharmacokinetics 63.1 (2024): 69-78](https://link.springer.com/article/10.1007/s40262-023-01323-6)

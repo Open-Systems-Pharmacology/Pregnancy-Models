@@ -1,0 +1,3888 @@
+{
+  "Version": 80,
+  "Individuals": [
+    {
+      "Name": "Palma2007",
+      "Seed": 113220502,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "MexicanAmericanWhite_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 22.2,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 66.0,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Value": 165.0,
+          "Unit": "cm"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Laskin1982_GroupA",
+      "Seed": 114690999,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "WhiteAmerican_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 69.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 86.2,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Value": 164.7,
+          "Unit": "cm"
+        },
+        "ValueOrigin": {
+          "Source": "Publication",
+          "Method": "InVivo",
+          "Description": "PMID: 7103443"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Laskin1982_GroupB",
+      "Seed": 114751418,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "WhiteAmerican_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 64.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 73.3,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Value": 164.5,
+          "Unit": "cm"
+        },
+        "ValueOrigin": {
+          "Source": "Publication"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Laskin1982_GroupC",
+      "Seed": 114794724,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "WhiteAmerican_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 66.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 63.7,
+          "Unit": "kg"
+        },
+        "ValueOrigin": {
+          "Source": "Publication"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Laskin1982_GroupD",
+      "Seed": 114823116,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "WhiteAmerican_NHANES_1997",
+        "Gender": "MALE",
+        "Age": {
+          "Value": 40.0,
+          "Unit": "year(s)"
+        },
+        "Weight": {
+          "Value": 65.2,
+          "Unit": "kg"
+        },
+        "Height": {
+          "Value": 164.4,
+          "Unit": "cm"
+        },
+        "ValueOrigin": {
+          "Source": "Publication"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Pregnant_36-38weeksGA",
+      "Seed": 118881934,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "Pregnant",
+        "Age": {
+          "Value": 30.6708,
+          "Unit": "year(s)"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Pregnant_38-40weeksGA",
+      "Seed": 44339953,
+      "OriginData": {
+        "CalculationMethods": [
+          "Body surface area - Mosteller",
+          "SurfaceAreaPlsInt_VAR1"
+        ],
+        "Species": "Human",
+        "Population": "Pregnant",
+        "Age": {
+          "Value": 30.725,
+          "Unit": "year(s)"
+        }
+      },
+      "ExpressionProfiles": []
+    },
+    {
+      "Name": "Default female human",
+      "Seed": 440541359,
+      "OriginData": {
+        "CalculationMethods": [
+          "SurfaceAreaPlsInt_VAR1",
+          "Body surface area - Mosteller"
+        ],
+        "Species": "Human",
+        "Population": "European_ICRP_2002",
+        "Gender": "FEMALE",
+        "Age": {
+          "Value": 30.0,
+          "Unit": "year(s)"
+        }
+      },
+      "ExpressionProfiles": []
+    }
+  ],
+  "Populations": [
+    {
+      "Name": "Pregnant_GA36-38weeks",
+      "Seed": 119041164,
+      "Settings": {
+        "NumberOfIndividuals": 2000,
+        "ProportionOfFemales": 100,
+        "Age": {
+          "Min": 30.6516,
+          "Max": 30.7,
+          "Unit": "year(s)"
+        },
+        "Individual": {
+          "Name": "Pregnant_37weeksGA",
+          "Seed": 118881934,
+          "OriginData": {
+            "CalculationMethods": [
+              "Body surface area - Mosteller",
+              "SurfaceAreaPlsInt_VAR1"
+            ],
+            "Species": "Human",
+            "Population": "Pregnant",
+            "Age": {
+              "Value": 30.6708,
+              "Unit": "year(s)"
+            }
+          },
+          "ExpressionProfiles": []
+        }
+      }
+    },
+    {
+      "Name": "Pregnant_GA38-40weeks",
+      "Seed": 120599256,
+      "Settings": {
+        "NumberOfIndividuals": 2000,
+        "ProportionOfFemales": 100,
+        "Age": {
+          "Min": 30.7,
+          "Max": 30.75,
+          "Unit": "year(s)"
+        },
+        "Individual": {
+          "Name": "Pregnant_37weeksGA",
+          "Seed": 118881934,
+          "OriginData": {
+            "CalculationMethods": [
+              "Body surface area - Mosteller",
+              "SurfaceAreaPlsInt_VAR1"
+            ],
+            "Species": "Human",
+            "Population": "Pregnant",
+            "Age": {
+              "Value": 30.6708,
+              "Unit": "year(s)"
+            }
+          },
+          "ExpressionProfiles": []
+        }
+      }
+    }
+  ],
+  "Compounds": [
+    {
+      "Name": "Aciclovir",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Albumin",
+      "Lipophilicity": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": -0.8869549446,
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'IV data' on 2018-07-27 17:55"
+              }
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Human",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.85
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Measurement",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 33990.0,
+              "Unit": "mg/l"
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 7.0
+            }
+          ]
+        }
+      ],
+      "IntestinalPermeability": [
+        {
+          "Name": "Fitted",
+          "Parameters": [
+            {
+              "Name": "Specific intestinal permeability (transcellular)",
+              "Value": 2.2717202558E-07,
+              "Unit": "cm/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Oral' on 2018-07-27 18:08"
+              }
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Acid",
+          "Pka": 9.2
+        },
+        {
+          "Type": "Base",
+          "Pka": 2.2
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "GlomerularFiltration",
+          "DataSource": "GFR",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "GFR fraction",
+              "Value": 1.0
+            }
+          ]
+        },
+        {
+          "InternalName": "TubularSecretion_FirstOrder",
+          "DataSource": "TS",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Volume (kidney)",
+              "Value": 0.4377199853,
+              "Unit": "l",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Tubular secretion",
+              "Value": 0.412,
+              "Unit": "l/min"
+            },
+            {
+              "Name": "TSspec",
+              "Value": 0.7033266791,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'IV data' on 2018-07-27 17:55"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "LiverClearance",
+          "DataSource": "Paper",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (experiment)",
+              "Value": 0.85
+            },
+            {
+              "Name": "Lipophilicity (experiment)",
+              "Value": -0.097,
+              "Unit": "Log Units"
+            },
+            {
+              "Name": "Plasma clearance",
+              "Value": 0.0,
+              "Unit": "ml/min/kg"
+            },
+            {
+              "Name": "Specific clearance",
+              "Value": 0.0228532397,
+              "Unit": "1/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'IV data' on 2018-07-27 17:55"
+              }
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - PK-Sim Standard",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 225.21,
+          "Unit": "g/mol"
+        }
+      ],
+      "Description": "Version 1.1"
+    }
+  ],
+  "Formulations": [
+    {
+      "Name": "Solution",
+      "FormulationType": "Formulation_Dissolved"
+    },
+    {
+      "Name": "Zovirax Weibull",
+      "FormulationType": "Formulation_Tablet_Weibull",
+      "Parameters": [
+        {
+          "Name": "Dissolution time (50% dissolved)",
+          "Value": 4.94,
+          "Unit": "min"
+        },
+        {
+          "Name": "Lag time",
+          "Value": 0.0,
+          "Unit": "min"
+        },
+        {
+          "Name": "Dissolution shape",
+          "Value": 0.93
+        },
+        {
+          "Name": "Use as suspension",
+          "Value": 1.0
+        }
+      ]
+    }
+  ],
+  "Protocols": [
+    {
+      "Name": "Oral_400mg",
+      "ApplicationType": "Oral",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 400.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
+    },
+    {
+      "Name": "IV_2.5mg/kg",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 2.5,
+          "Unit": "mg/kg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IV_5mg/kg",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 5.0,
+          "Unit": "mg/kg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IV_10mg/kg",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 10.0,
+          "Unit": "mg/kg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "IV_15mg/kg",
+      "ApplicationType": "Intravenous",
+      "DosingInterval": "Single",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 15.0,
+          "Unit": "mg/kg"
+        },
+        {
+          "Name": "Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        }
+      ]
+    },
+    {
+      "Name": "Oral_200mg",
+      "ApplicationType": "Oral",
+      "DosingInterval": "DI_8_8_8",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 200.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "End time",
+          "Value": 120.0,
+          "Unit": "h",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
+    },
+    {
+      "Name": "po 400mg 3xdaily 3 weeks",
+      "ApplicationType": "Oral",
+      "DosingInterval": "DI_8_8_8",
+      "Parameters": [
+        {
+          "Name": "Start time",
+          "Value": 0.0,
+          "Unit": "h"
+        },
+        {
+          "Name": "InputDose",
+          "Value": 400.0,
+          "Unit": "mg"
+        },
+        {
+          "Name": "End time",
+          "Value": 3.0,
+          "Unit": "week(s)",
+          "ValueOrigin": {
+            "Source": "Unknown"
+          }
+        },
+        {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ]
+    }
+  ],
+  "Simulations": [
+    {
+      "Name": "Palma2007_tablet",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Palma 2007_400mg_Tab"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Oral_400mg|Zovirax Weibull|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Palma2007",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Oral_400mg",
+            "Formulations": [
+              {
+                "Name": "Zovirax Weibull",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "mg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Palma2007_tablet-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Palma2007_tablet|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Palma 2007.400mg.oral.Tab Zov-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Palma 2007_400mg_Tab|time ",
+              "Y": "Palma 2007_400mg_Tab|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nPalma2007_tablet\n2019-09-19 09:59"
+        }
+      ]
+    },
+    {
+      "Name": "Laskin1982_GroupA",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Laskin 1982.Group A",
+        "UrinaryExcretion_DrugUnchanged_A"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_2.5mg/kg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine"
+      ],
+      "Individual": "Laskin1982_GroupA",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Calculated",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_2.5mg/kg"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -1.386534,
+              "Max": 23.71072,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.06700016,
+              "Max": 26.36837,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0004416583,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Laskin1982_GroupA-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Laskin1982_GroupA|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Laskin1982_GroupA-Aciclovir-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "Laskin1982_GroupA|Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 2,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Laskin 1982.Group A-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Laskin 1982.Group A|Time ",
+              "Y": "Laskin 1982.Group A|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "UrinaryExcretion_DrugUnchanged_A-Aciclovir-Kidney-Urine-Fraction ",
+              "X": "UrinaryExcretion_DrugUnchanged_A|Time ",
+              "Y": "UrinaryExcretion_DrugUnchanged_A|ObservedData|Kidney|Urine|Aciclovir|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nLaskin1982_GroupA\n2019-09-18 17:47"
+        }
+      ]
+    },
+    {
+      "Name": "Laskin1982_GroupB",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Laskin 1982.Group B",
+        "UrinaryExcretion_DrugUnchanged_B"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_5mg/kg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine"
+      ],
+      "Individual": "Laskin1982_GroupB",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Calculated",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_5mg/kg"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -0.5386534,
+              "Max": 20.48878,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1199548,
+              "Max": 121.161,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001920475,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Laskin1982_GroupB-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Laskin1982_GroupB|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Laskin1982_GroupB-Aciclovir-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "Laskin1982_GroupB|Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 2,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Laskin 1982.Group B-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Laskin 1982.Group B|Time ",
+              "Y": "Laskin 1982.Group B|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "UrinaryExcretion_DrugUnchanged_B-Aciclovir-Peripheral Venous Blood-Urine-Fraction ",
+              "X": "UrinaryExcretion_DrugUnchanged_B|Time ",
+              "Y": "UrinaryExcretion_DrugUnchanged_B|ObservedData|Peripheral Venous Blood|Urine|Aciclovir|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nLaskin1982_GroupB\n2019-09-18 17:48"
+        }
+      ]
+    },
+    {
+      "Name": "Laskin1982_GroupC",
+      "Model": "4Comp",
+      "ObservedData": [
+        "UrinaryExcretion_DrugUnchanged_C",
+        "Laskin 1982.Group C"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_10mg/kg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine"
+      ],
+      "Individual": "Laskin1982_GroupC",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Calculated",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_10mg/kg"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -1.997478,
+              "Max": 22.01261,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.194842,
+              "Max": 292.0242,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.000123317,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Laskin1982_GroupC-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Laskin1982_GroupC|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Laskin1982_GroupC-Aciclovir-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "Laskin1982_GroupC|Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 2,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "UrinaryExcretion_DrugUnchanged_C-Aciclovir-Kidney-Urine-Fraction ",
+              "X": "UrinaryExcretion_DrugUnchanged_C|Time ",
+              "Y": "UrinaryExcretion_DrugUnchanged_C|ObservedData|Kidney|Urine|Aciclovir|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Laskin 1982.Group C-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Laskin 1982.Group C|Time ",
+              "Y": "Laskin 1982.Group C|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nLaskin1982_GroupC\n2019-09-18 17:49"
+        }
+      ]
+    },
+    {
+      "Name": "Laskin1982_GroupD",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Laskin 1982.Group D",
+        "UrinaryExcretion_DrugUnchanged_D"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_15mg/kg|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 60.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine"
+      ],
+      "Individual": "Laskin1982_GroupD",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_15mg/kg"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": -2.224562,
+              "Max": 22.91802,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1530512,
+              "Max": 1153.468,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.000869428,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Laskin1982_GroupD-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Laskin1982_GroupD|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Laskin1982_GroupD-Aciclovir-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "Laskin1982_GroupD|Organism|Kidney|Urine|Aciclovir|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 2,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Laskin 1982.Group D-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Laskin 1982.Group D|Time ",
+              "Y": "Laskin 1982.Group D|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "UrinaryExcretion_DrugUnchanged_D-Aciclovir-Kidney-Urine-Fraction ",
+              "X": "UrinaryExcretion_DrugUnchanged_D|Time ",
+              "Y": "UrinaryExcretion_DrugUnchanged_D|ObservedData|Kidney|Urine|Aciclovir|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#ECD33A",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nLaskin1982_GroupD\n2019-09-18 17:51"
+        }
+      ]
+    },
+    {
+      "Name": "Palma2007_suspension",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Palma 2007_400mg_Susp"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 2.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 24.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Oral_400mg|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 23.0,
+          "Unit": "h"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 36.0,
+          "Unit": "h"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "Palma2007",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Oral_400mg",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Palma2007_suspension-Aciclovir-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Palma2007_suspension|Organism|PeripheralVenousBlood|Aciclovir|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Palma 2007.400mg.oral.Susp Zov-Aciclovir-Peripheral Venous Blood-Plasma-conc ",
+              "X": "Palma 2007_400mg_Susp|time ",
+              "Y": "Palma 2007_400mg_Susp|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "None",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Aciclovir_v7.3_nonpreg_preg_0918\nPalma2007_suspension\n2019-09-19 09:57"
+        }
+      ]
+    },
+    {
+      "Name": "po 400mg 3xdaily 3 weeks",
+      "Model": "4Comp",
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "week(s)"
+            },
+            {
+              "Name": "End time",
+              "Value": 0.0119047619,
+              "Unit": "week(s)"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h"
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0119047619,
+              "Unit": "week(s)"
+            },
+            {
+              "Name": "End time",
+              "Value": 3.1428571429,
+              "Unit": "week(s)"
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_33|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_34|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_35|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_36|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_37|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_38|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_39|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_40|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_41|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_42|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_43|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_44|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_45|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_46|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_47|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_48|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_49|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_50|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_51|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_52|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_53|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_54|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_55|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_56|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_57|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_58|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_59|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_60|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_61|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_62|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_63|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Events|po 400mg 3xdaily 3 weeks|Zovirax Weibull|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Undefined Liver|Reference concentration",
+          "Value": 1.0,
+          "Unit": "µmol/l"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (intestine)",
+          "Value": 1380.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Undefined Liver|t1/2 (liver)",
+          "Value": 2160.0,
+          "Unit": "min"
+        }
+      ],
+      "Individual": "Default female human",
+      "Compounds": [
+        {
+          "Name": "Aciclovir",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "Total Hepatic Clearance-Paper",
+              "SystemicProcessType": "Hepatic"
+            },
+            {
+              "Name": "Renal Clearances-TS",
+              "SystemicProcessType": "Renal"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "po 400mg 3xdaily 3 weeks",
+            "Formulations": [
+              {
+                "Name": "Zovirax Weibull",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": false
+    }
+  ],
+  "ObservedData": [
+    {
+      "Name": "Palma 2007_400mg_Tab",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Palma 2007 400mg Tab Zov",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Palma 2007 400mg Tab Zov",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Palma 2007",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "400mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "oral",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Tab Zov",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD",
+              "QuantityInfo": {
+                "Path": "Palma 2007_400mg_Tab|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "ArithmeticStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                0.0,
+                75.5396042,
+                176.258987,
+                230.2158,
+                226.6187,
+                190.647491,
+                197.8417,
+                255.395691,
+                241.0072,
+                183.4532,
+                169.0648,
+                61.1509972,
+                35.9712029,
+                14.38848
+              ],
+              "Dimension": "Concentration (mass)",
+              "Unit": "ng/ml"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Palma 2007_400mg_Tab|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.0,
+            0.1294964,
+            0.3021583,
+            0.4820144,
+            0.550359666,
+            0.5791367,
+            0.5791367,
+            0.589928,
+            0.557554,
+            0.4280576,
+            0.3273381,
+            0.1726619,
+            0.1115108,
+            0.07553957
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "time ",
+        "QuantityInfo": {
+          "Path": "Palma 2007_400mg_Tab|time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.0,
+          0.2613065,
+          0.502512634,
+          0.7638191,
+          1.005025,
+          1.246231,
+          1.507538,
+          1.74874389,
+          2.01005,
+          2.994975,
+          4.0,
+          5.98995,
+          8.0,
+          12.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Palma 2007_400mg_Susp",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Palma 2007 400mg Susp Zov",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Palma 2007 400mg Susp Zov",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Palma 2007",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "400mg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "oral",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Susp Zov",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD scan",
+              "QuantityInfo": {
+                "Path": "Palma 2007_400mg_Susp|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD scan"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "ArithmeticStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                0.0,
+                52.33643,
+                132.0873,
+                157.0094,
+                117.1339,
+                119.626091,
+                122.118393,
+                124.610596,
+                127.102791,
+                112.1495,
+                77.2586,
+                42.3676,
+                24.92215,
+                14.9532709
+              ],
+              "Dimension": "Concentration (mass)",
+              "Unit": "ng/ml"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Palma 2007_400mg_Susp|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.0,
+            0.129595,
+            0.2841122,
+            0.411215,
+            0.4909657,
+            0.5333333,
+            0.5433022,
+            0.5158879,
+            0.478504717,
+            0.3838006,
+            0.2890966,
+            0.176947,
+            0.119626194,
+            0.08722742
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "time ",
+        "QuantityInfo": {
+          "Path": "Palma 2007_400mg_Susp|time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.0,
+          0.279476017,
+          0.5065502,
+          0.768559039,
+          1.0131,
+          1.27510893,
+          1.50218308,
+          1.764192,
+          2.008734,
+          3.004367,
+          4.017467,
+          6.008734,
+          8.0,
+          12.01747
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Laskin 1982.Group A",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Laskin 1982 2.5 mg per kg ",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Laskin 1982 2.5 mg per kg ",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Laskin 1982",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "2.5 mg/kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Group A",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD",
+              "QuantityInfo": {
+                "Path": "Laskin 1982.Group A|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                "NaN",
+                1.226833,
+                1.281395,
+                1.817689,
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN"
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Laskin 1982.Group A|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            2.37029886,
+            2.94639778,
+            3.077436,
+            3.077436,
+            2.17274,
+            1.93470192,
+            1.30778193,
+            0.7320941,
+            0.4343055,
+            0.164341792,
+            0.02642696
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Laskin 1982.Group A|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.25,
+          0.5,
+          0.75,
+          1.17,
+          1.67,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          11.0,
+          19.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Laskin 1982.Group B",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Laskin 1982 5.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Laskin 1982 5.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Laskin 1982",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "5 mg/kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Group B",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD",
+              "QuantityInfo": {
+                "Path": "Laskin 1982.Group B|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                "NaN",
+                3.10996,
+                2.395268,
+                2.995096,
+                2.386709,
+                1.033699,
+                1.022975,
+                1.060702,
+                1.189132,
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN"
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Laskin 1982.Group B|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            4.196123,
+            7.91186,
+            8.626552,
+            8.026724,
+            6.751822,
+            6.016483,
+            4.57516575,
+            3.580887,
+            2.391755,
+            1.250336,
+            0.7024823,
+            0.3272404,
+            0.0641965643
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Laskin 1982.Group B|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.17,
+          1.33,
+          1.67,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          11.0,
+          19.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Laskin 1982.Group C",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Laskin 1982 10.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Laskin 1982 10.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Laskin 1982",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "10 mg/kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Group C",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD",
+              "QuantityInfo": {
+                "Path": "Laskin 1982.Group C|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                3.811188,
+                2.42863,
+                4.66286,
+                4.65008,
+                3.57034,
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN"
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Laskin 1982.Group C|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            8.914163,
+            13.7049,
+            13.5031395,
+            12.7253494,
+            10.33934,
+            7.572287,
+            5.972656,
+            3.88483024,
+            1.93479311,
+            1.134359,
+            0.4522666,
+            0.2286116,
+            0.1401322
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Laskin 1982.Group C|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.17,
+          1.67,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          11.0,
+          15.0,
+          21.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Laskin 1982.Group D",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "X:\\Orga\\BTS-TD\\ET\\TP CSB\\Projects\\Internal Projects\\MagenDarm\\TestSubstanzen\\Acyclovir\\Rohdaten_Acyclovir.xls.Laskin 1982 15.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Rohdaten_Acyclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Laskin 1982 15.0 mg per kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir_template",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Laskin 1982",
+          "Type": "String"
+        },
+        {
+          "Name": "Gender",
+          "Value": "Undefined",
+          "Type": "String"
+        },
+        {
+          "Name": "Dose",
+          "Value": "15 mg/kg",
+          "Type": "String"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV",
+          "Type": "String"
+        },
+        {
+          "Name": "Patient Id",
+          "Value": "Group D",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "conc ",
+          "RelatedColumns": [
+            {
+              "Name": "SD",
+              "QuantityInfo": {
+                "Path": "Laskin 1982.Group D|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|SD"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "GeometricStdDev",
+                "MolWeight": 225.21
+              },
+              "Values": [
+                7.94782,
+                5.3941,
+                11.68675,
+                10.71077,
+                2.74829,
+                2.35149,
+                2.203539,
+                2.304308,
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN",
+                "NaN"
+              ],
+              "Dimension": "Dimensionless"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Laskin 1982.Group D|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            14.29552,
+            14.0864,
+            21.91795,
+            21.91795,
+            15.61709,
+            12.15626,
+            8.287051,
+            7.585776,
+            4.02531576,
+            2.167704,
+            1.150271,
+            0.3922835,
+            0.1154516,
+            0.04429962
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Laskin 1982.Group D|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.17,
+          1.33,
+          1.67,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          11.0,
+          15.0,
+          21.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "UrinaryExcretion_DrugUnchanged_A",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\UrinaryExcretion_DrugUnchanged_A.xlsx.Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "UrinaryExcretion_DrugUnchanged_A",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Kidney",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction ",
+          "QuantityInfo": {
+            "Path": "UrinaryExcretion_DrugUnchanged_A|ObservedData|Kidney|Urine|Aciclovir|Fraction "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.9
+          ],
+          "Dimension": "Fraction"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "UrinaryExcretion_DrugUnchanged_A|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "UrinaryExcretion_DrugUnchanged_B",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\UrinaryExcretion_DrugUnchanged_B.xlsx.Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "UrinaryExcretion_DrugUnchanged_B",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction ",
+          "QuantityInfo": {
+            "Path": "UrinaryExcretion_DrugUnchanged_B|ObservedData|Peripheral Venous Blood|Urine|Aciclovir|Fraction "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.9
+          ],
+          "Dimension": "Fraction"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "UrinaryExcretion_DrugUnchanged_B|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "UrinaryExcretion_DrugUnchanged_C",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\UrinaryExcretion_DrugUnchanged_C.xlsx.Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "UrinaryExcretion_DrugUnchanged_C",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Kidney",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction ",
+          "QuantityInfo": {
+            "Path": "UrinaryExcretion_DrugUnchanged_C|ObservedData|Kidney|Urine|Aciclovir|Fraction "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.9
+          ],
+          "Dimension": "Fraction"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "UrinaryExcretion_DrugUnchanged_C|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "UrinaryExcretion_DrugUnchanged_D",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\UrinaryExcretion_DrugUnchanged_D.xlsx.Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "UrinaryExcretion_DrugUnchanged_D",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Kidney",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Urine",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Fraction ",
+          "QuantityInfo": {
+            "Path": "UrinaryExcretion_DrugUnchanged_D|ObservedData|Kidney|Urine|Aciclovir|Fraction "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.9
+          ],
+          "Dimension": "Fraction"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "UrinaryExcretion_DrugUnchanged_D|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          120.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kimberlin1998_singleDose",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\Kimberlin1998.xlsx.Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Kimberlin1998",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "Tabelle1",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Path": "Kimberlin1998_singleDose|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.1018152,
+            0.2301331,
+            0.3522695,
+            0.6302011,
+            0.4424185,
+            0.2610157,
+            0.1317624
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Kimberlin1998_singleDose|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          3.0,
+          5.0,
+          7.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Frenkl1991_singleDose",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "\\\\BYARXC2\\Kunde18_User$\\GDUTJ\\Personal Data\\1_Pregnant_Women\\Simulations\\Aciclovir\\Frenkl1991.xlsx.ObsData_MoBi",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Frenkl1991",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "ObsData_MoBi",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Path": "Frenkl1991_singleDose|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            4.5936,
+            3.552,
+            2.3144,
+            2.2696,
+            2.18,
+            2.096,
+            1.6368,
+            1.1104,
+            3.4624,
+            3.188,
+            2.9248,
+            2.7568,
+            2.32,
+            1.6592,
+            1.3848,
+            1.0488,
+            1.34,
+            1.2336,
+            1.0208,
+            0.7688,
+            0.2928
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Frenkl1991_singleDose|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          1.49901617,
+          1.49902368,
+          1.49903452,
+          1.49907863,
+          1.49913609,
+          1.4993614,
+          1.49946272,
+          1.4996587,
+          3.00002265,
+          3.00003147,
+          3.00025916,
+          3.00042629,
+          3.000427,
+          3.00047541,
+          3.000519,
+          3.00068831,
+          6.000704,
+          6.000853,
+          6.000903,
+          6.00095844,
+          6.000978
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Kimberlin1998_Multidosing_SteadyState",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Projects\\Misc\\FDA_pregnancyPBPK\\Emtricitabine\\Aciclovir\\Kimberlin1998.xlsx.ObsData_SteadyState",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Kimberlin1998",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "ObsData_SteadyState",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Concentration ",
+          "QuantityInfo": {
+            "Path": "Kimberlin1998_Multidosing_SteadyState|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|Concentration "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.0999380946,
+            0.258953154,
+            0.77193445,
+            0.79071933,
+            0.7103052,
+            0.5026561,
+            0.310584,
+            0.211291164
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "µg/ml"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Kimberlin1998_Multidosing_SteadyState|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          120.0,
+          120.5,
+          121.0,
+          121.5,
+          122.0,
+          123.0,
+          125.0,
+          127.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Frenkl_1991_Multidosing_SteadyState",
+      "ExtendedProperties": [
+        {
+          "Name": "Source",
+          "Value": "C:\\Users\\GDUTJ\\OneDrive - Bayer\\Projects\\Misc\\FDA_pregnancyPBPK\\Emtricitabine, Aciclovir\\Aciclovir\\Frenkl1991.xlsx.ObsData_MoBi_MD",
+          "Type": "String"
+        },
+        {
+          "Name": "File",
+          "Value": "Frenkl1991",
+          "Type": "String"
+        },
+        {
+          "Name": "Sheet",
+          "Value": "ObsData_MoBi_MD",
+          "Type": "String"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Aciclovir",
+          "Type": "String"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human",
+          "Type": "String"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma",
+          "Type": "String"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Conc ",
+          "QuantityInfo": {
+            "Path": "Frenkl_1991_Multidosing_SteadyState|ObservedData|Peripheral Venous Blood|Plasma|Aciclovir|Conc "
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 225.21
+          },
+          "Values": [
+            0.05700196,
+            0.2040298,
+            0.262852758,
+            0.865788,
+            0.924611,
+            0.9834339,
+            1.034904,
+            2.012865,
+            0.895731032,
+            2.13836575,
+            3.13100314,
+            3.616322,
+            3.68985057,
+            3.77073216,
+            4.09425831,
+            4.16043425,
+            4.35896158,
+            4.65307665
+          ],
+          "Dimension": "Concentration (molar)",
+          "Unit": "µM"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time ",
+        "QuantityInfo": {
+          "Path": "Frenkl_1991_Multidosing_SteadyState|Time ",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          119.9997,
+          119.999794,
+          119.9999,
+          120.0,
+          120.0001,
+          120.000206,
+          120.0003,
+          120.0004,
+          121.499962,
+          121.499969,
+          121.499985,
+          121.499992,
+          121.5,
+          121.500008,
+          121.500015,
+          121.500031,
+          121.500038,
+          121.500046
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    }
+  ]
+}

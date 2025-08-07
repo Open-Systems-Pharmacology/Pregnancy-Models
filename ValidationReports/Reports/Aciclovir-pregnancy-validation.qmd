@@ -1,0 +1,173 @@
+---
+title: "Human pregnancy module validation report" # Title of the document
+subtitle: "Aciclovir simulations" # Subtitle of the document. May be left empty
+author: "" # Author of the document. May be left empty
+institute: "ESQlabs GmbH"
+date: "now"
+date-format: "YYYY-MM-DD HH:mm:ss" 
+params:  
+  loadPreSimulatedResults: FALSE # If `TRUE`, results will be loaded from the folder specified in `loadResultsFolder`
+  loadResultsFolder: "2025-07-15 17-12" # Sub-folder where simulated results is located, in case `loadPreSimulatedResults` is `TRUE`. The folder must be located in the "SimulationResults" folder defined in the `ProjectConfiguration`.
+output-file: "Pregnancy modeling validation report - Aciclovir" #Name of the output file.
+link-citations: TRUE
+reference-section-title: "References"
+bibliography: references.bib
+execute:
+  echo: false # do not show code chunks 2DO NOT WORKING
+  output: true
+  warning: false # do not print warning
+  cache: false # do not use cache unless specified in chunks
+format:
+  pdf:
+    toc: true # display table of content (TOC)
+    toc-depth: 3 # display three levels in TOC
+    toc-title: Table of Content # override default "Content" TOC title
+    lof: false # Print list of figures?
+    lot: false # Print list of tables?
+    fig-cap-location: bottom # figure captions location
+    tbl-cap-location: top # table captions location
+    number-sections: true # add number to sections
+    colorlinks: true # links format
+    fig-pos: "H" # ensure plots don't move to bottom of doc
+    fig-align: center # plots are centered by default
+    papersize: A4
+   # fontfamily: "Segoe UI" # Can we use "Segoe UI Light" here?
+---
+
+```{r initParams, include = FALSE, eval = FALSE}
+# If no parameters are provided, set defaults
+# This is only used for testing purposes when running the code in an R sessions and not in the report
+# Review - what would be the better way to do it?
+params <- list(
+  loadPreSimulatedResults = TRUE,
+  loadResultsFolder = "2025-07-15 17-12"
+)
+```
+
+```{r initialize, include = FALSE, eval = TRUE}
+# Load required libraries
+library(esqlabsR)
+# Source all utility files
+sourceAll("utils")
+# Create project configuration
+projectConfiguration <- esqlabsR::createProjectConfiguration(path = "../ProjectConfiguration.xlsx")
+
+source("Aciclovir-pregnancy-validation.R")
+```
+
+```{r simulateScenarios1, include = FALSE, eval = TRUE}
+# This code runs the defined scenarios, generates figures, etc. This chunk can be re-used multiple times
+# in the report. When re-using, remember to re-name the chunk as every chunk must have a unique name.
+
+# Define the scenarios to execute, the sheets to load data from, and the plots to generate in this run
+scenarioNames <- list(
+  "po 400mg 3xdaily 3 weeks pregnant"
+  #"po 400mg 3xdaily 3 weeks pregnant pop"
+)
+dataSheets <- c("Human")
+plotGridNames <- c(
+  "MaternalPlasma",
+  "MaternalPlasma1",
+  "Delivery"
+  # "MaternalPlasma_pop",
+  #  "MaternalPlasma1_pop",
+  #  "Delivery_pop"
+)
+# Additional `DataSet` object can be passed to be used for the creation of the figures. A typical use
+# case would be reading data sets from pkml using the `esqlabsR::loadObservedDataFromPKML()` function.
+dataSets <- list()
+
+# Optionally, define custom parameters to be used in the simulation.
+# Must be A list containing vectors 'paths' with the full paths to the parameters,
+# 'values' the values of the parameters, and 'units' with the units the values are in.
+customParams <- NULL
+
+# Adjust simulation run options, if necessary.
+# E.g. disable check for negative values if required
+simulationRunOptions <- NULL
+# simulationRunOptions <- ospsuite::SimulationRunOptions$new()
+# simulationRunOptions$checkForNegativeValues <- FALSE
+
+reportResults <- createResults(
+  projectConfiguration = projectConfiguration,
+  params = params,
+  scenarioNames = scenarioNames,
+  customParams = customParams,
+  dataSheets = dataSheets,
+  customDataSets = dataSets,
+  plotGridNames = plotGridNames,
+  simulationRunOptions = simulationRunOptions
+)
+
+# A separate set of scenarios can be executed e.g. with specified custom parameters.
+# The two sets of results can be conbined with the function `combineResults()`.
+
+# Optionally - export the figures to PNG files
+# exportPlotsToPNG(reportResults$plots)
+```
+
+\newpage
+
+::: callout-note
+```{r resultsOrigin, echo=FALSE, results='asis'}
+if (params$loadPreSimulatedResults) {
+  cat("This report has been created with simulation results loaded from results folder '", params$loadResultsFolder, "'.")
+} else {
+  cat("This report has been created by running the simulations. The results have been stored in folder '", reportResults$scenarioResults$outputFolder, "'.")
+}
+```
+:::
+
+\newpage
+
+# Introduction
+
+This report presents the validation of the human pregnancy module using Aciclovir simulations. The module is designed to simulate the pharmacokinetics of drugs during pregnancy, taking into account physiological changes that occur during this period.
+
+# Data
+
+Data from the following studies has been used for model validation:
+
+|   | Frenkel 1991 [1] | Kimberlin 1998 [2] | Leung 2009 [3] |
+|----|----|----|----|
+| Dose | 400 mg | \(I\) 200 mg (II) 400 mg | 400 mg |
+| Frequency | 3 times daily | 3 times daily | 3 times daily |
+| Route of administration | Oral | Oral | Oral |
+| N | 15 | 20 | 27 |
+| Duration | Until delivery | Until delivery | Until delivery |
+| Gestational age at start of treatment | 38 weeks | 36 weeks | 36 weeks |
+| Measurement | Maternal Plasma | Maternal Plasma | Maternal plasma, Umbilical cord blood |
+|  |  |  |  |
+
+# Results
+
+Comparison of individual simulations with observed data are presented in the following figures.
+
+```{r figures, include = TRUE, eval = TRUE}
+#| label: fig-Aciclovir-maternal-plasma
+#| fig-cap: "Simulation results of Acyclovir model in human pregnancy over multiple weeks. PK measurements present the following time points: (I) concentration after first dose, (II) steady state concentration (day 6 - 14) and (III) after delivery (>day 20)."
+
+reportResults$plots$MaternalPlasma
+```
+
+```{r figures, include = TRUE, eval = TRUE}
+#| label: fig-Aciclovir-maternal-plasma1
+#| fig-cap: "Simulation results of Acyclovir model in human pregnancy after first dose. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
+
+reportResults$plots$MaternalPlasma1
+```
+
+```{r figures, include = TRUE, eval = TRUE}
+#| label: fig-Aciclovir-maternal-delivery
+#| fig-cap: "Simulation results of Acyclovir model in human pregnancy at delivery. (a) maternal plasma concentration after first dose. (b) and (c) maternal plasma concentration at steady state."
+
+reportResults$plots$Delivery
+```
+
+# References
+
+[1] Frenkel, Lisa M., et al. "Pharmacokinetics of acyclovir in the term human pregnancy and neonate." American journal of obstetrics and gynecology 164.2 (1991): 569-576.
+
+[2] Kimberlin, Debora F, Stephen Weller, Richard J Whitley, William W Andrews, John C Hauth, Fred Lakeman, and Gerri Miller. 1998. “Pharmacokinetics of Oral Valacyclovir and Acyclovir in Late Pregnancy.” American Journal of Obstetrics and Gynecology 179 (4): 846–51.
+
+[3] Leung, Daniel T., Paul A. Henning, Emily C. Wagner, Audrey Blasig, Anna Wald, Stephen L. Sacks, Lawrence Corey, and Deborah M. Money. 2009. “Inadequacy of Plasma Acyclovir Levels at Delivery in Patients With Genital Herpes Receiving Oral Acyclovir Suppressive Therapy in Late Pregnancy.” Journal of Obstetrics and Gynaecology Canada 31 (12): 1137–43.

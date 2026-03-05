@@ -128,7 +128,7 @@ This report presents the validation of the human pregnancy module using Aciclovi
 
 Data from the following studies has been used for model validation:
 
-|   | Frenkel 1991 [1] | Kimberlin 1998 [2] | Leung 2009 [3] |
+|   | Frenkel 1991 \[1\] | Kimberlin 1998 \[2\] | Leung 2009 \[3\] |
 |----|----|----|----|
 | Dose | 400 mg | \(I\) 200 mg (II) 400 mg | 400 mg |
 | Frequency | 3 times daily | 3 times daily | 3 times daily |
@@ -166,8 +166,8 @@ reportResults$plots$Delivery
 
 # References
 
-[1] Frenkel, Lisa M., et al. "Pharmacokinetics of acyclovir in the term human pregnancy and neonate." American journal of obstetrics and gynecology 164.2 (1991): 569-576.
+\[1\] Frenkel, Lisa M., et al. "Pharmacokinetics of acyclovir in the term human pregnancy and neonate." American journal of obstetrics and gynecology 164.2 (1991): 569-576.
 
-[2] Kimberlin, Debora F, Stephen Weller, Richard J Whitley, William W Andrews, John C Hauth, Fred Lakeman, and Gerri Miller. 1998. “Pharmacokinetics of Oral Valacyclovir and Acyclovir in Late Pregnancy.” American Journal of Obstetrics and Gynecology 179 (4): 846–51.
+\[2\] Kimberlin, Debora F, Stephen Weller, Richard J Whitley, William W Andrews, John C Hauth, Fred Lakeman, and Gerri Miller. 1998. “Pharmacokinetics of Oral Valacyclovir and Acyclovir in Late Pregnancy.” American Journal of Obstetrics and Gynecology 179 (4): 846–51.
 
-[3] Leung, Daniel T., Paul A. Henning, Emily C. Wagner, Audrey Blasig, Anna Wald, Stephen L. Sacks, Lawrence Corey, and Deborah M. Money. 2009. “Inadequacy of Plasma Acyclovir Levels at Delivery in Patients With Genital Herpes Receiving Oral Acyclovir Suppressive Therapy in Late Pregnancy.” Journal of Obstetrics and Gynaecology Canada 31 (12): 1137–43.
+\[3\] Leung, Daniel T., Paul A. Henning, Emily C. Wagner, Audrey Blasig, Anna Wald, Stephen L. Sacks, Lawrence Corey, and Deborah M. Money. 2009. “Inadequacy of Plasma Acyclovir Levels at Delivery in Patients With Genital Herpes Receiving Oral Acyclovir Suppressive Therapy in Late Pregnancy.” Journal of Obstetrics and Gynaecology Canada 31 (12): 1137–43.
